@@ -1,0 +1,152 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 750 520" width="750" height="520">
+  <defs>
+    <style>
+      .title { font: bold 18px 'Microsoft YaHei', 'PingFang SC', sans-serif; fill: #2c3e50; }
+      .subtitle { font: 14px 'Microsoft YaHei', 'PingFang SC', sans-serif; fill: #555; }
+      .label { font: bold 13px 'Microsoft YaHei', 'PingFang SC', sans-serif; fill: #2c3e50; }
+      .label-sm { font: 12px 'Microsoft YaHei', 'PingFang SC', sans-serif; fill: #444; }
+      .arrow-label { font: 11px 'Microsoft YaHei', 'PingFang SC', sans-serif; fill: #666; }
+      .word { font: 14px 'Microsoft YaHei', 'PingFang SC', sans-serif; fill: #2c3e50; }
+      .word-em { font: bold 14px 'Microsoft YaHei', 'PingFang SC', sans-serif; fill: #e74c3c; }
+    </style>
+    <marker id="arrowhead" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#888"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="750" height="520" fill="#fafbfc" rx="12"/>
+
+  <!-- Title -->
+  <text x="375" y="35" text-anchor="middle" class="title">语调曲线对比：平淡 vs 有表现力</text>
+  <text x="375" y="55" text-anchor="middle" class="subtitle">同一句话"这个发现改变了我对学习的整个看法"——两种说法的声音轮廓</text>
+
+  <!-- ===== TOP: Flat/Monotone version ===== -->
+  <g transform="translate(40, 80)">
+    <rect x="0" y="0" width="670" height="170" rx="8" fill="#fff" stroke="#e0e0e0" stroke-width="1"/>
+
+    <!-- Section label -->
+    <rect x="0" y="0" width="120" height="26" rx="8" fill="#bdc3c7"/>
+    <text x="60" y="18" text-anchor="middle" class="label" fill="#fff">平淡版（念经）</text>
+
+    <!-- Y-axis label -->
+    <text x="15" y="65" class="arrow-label" transform="rotate(-90, 15, 95)">音调高低</text>
+
+    <!-- Baseline grid -->
+    <line x1="50" y1="55" x2="650" y2="55" stroke="#eee" stroke-width="1" stroke-dasharray="3,3"/>
+    <line x1="50" y1="85" x2="650" y2="85" stroke="#eee" stroke-width="1" stroke-dasharray="3,3"/>
+    <line x1="50" y1="115" x2="650" y2="115" stroke="#eee" stroke-width="1" stroke-dasharray="3,3"/>
+
+    <!-- Flat intonation curve -->
+    <path d="M 60,87 L 105,85 L 150,86 L 195,84 L 240,86 L 285,85 L 330,87 L 375,85 L 420,86 L 465,84 L 510,86 L 555,85 L 600,87 L 635,86"
+          fill="none" stroke="#95a5a6" stroke-width="3" stroke-linecap="round"/>
+
+    <!-- Words below -->
+    <text x="82" y="135" text-anchor="middle" class="word">这个</text>
+    <text x="142" y="135" text-anchor="middle" class="word">发现</text>
+    <text x="210" y="135" text-anchor="middle" class="word">改变了</text>
+    <text x="285" y="135" text-anchor="middle" class="word">我</text>
+    <text x="340" y="135" text-anchor="middle" class="word">对</text>
+    <text x="400" y="135" text-anchor="middle" class="word">学习</text>
+    <text x="460" y="135" text-anchor="middle" class="word">的</text>
+    <text x="530" y="135" text-anchor="middle" class="word">整个</text>
+    <text x="610" y="135" text-anchor="middle" class="word">看法</text>
+
+    <!-- Speed indicator -->
+    <rect x="50" y="148" width="590" height="12" rx="3" fill="#ecf0f1"/>
+    <text x="345" y="158" text-anchor="middle" class="arrow-label" fill="#95a5a6">匀速 ——————————————————————————————————</text>
+  </g>
+
+  <!-- ===== BOTTOM: Expressive version ===== -->
+  <g transform="translate(40, 275)">
+    <rect x="0" y="0" width="670" height="210" rx="8" fill="#fff" stroke="#e0e0e0" stroke-width="1"/>
+
+    <!-- Section label -->
+    <rect x="0" y="0" width="140" height="26" rx="8" fill="#27ae60"/>
+    <text x="70" y="18" text-anchor="middle" class="label" fill="#fff">有表现力版</text>
+
+    <!-- Y-axis label -->
+    <text x="15" y="75" class="arrow-label" transform="rotate(-90, 15, 105)">音调高低</text>
+
+    <!-- Baseline grid -->
+    <line x1="50" y1="55" x2="650" y2="55" stroke="#eee" stroke-width="1" stroke-dasharray="3,3"/>
+    <line x1="50" y1="85" x2="650" y2="85" stroke="#eee" stroke-width="1" stroke-dasharray="3,3"/>
+    <line x1="50" y1="115" x2="650" y2="115" stroke="#eee" stroke-width="1" stroke-dasharray="3,3"/>
+    <line x1="50" y1="145" x2="650" y2="145" stroke="#eee" stroke-width="1" stroke-dasharray="3,3"/>
+
+    <!-- Expressive intonation curve -->
+    <path d="M 60,95 C 70,90 80,85 95,80 C 110,75 120,65 140,58 C 155,52 165,55 175,62
+             C 185,68 190,75 195,80
+             L 195,80
+             C 220,78 235,70 255,60 C 270,52 280,48 295,50
+             C 310,52 320,62 330,72
+             C 340,80 350,88 360,92
+             C 375,96 390,100 405,95
+             C 415,91 425,82 440,68 C 455,55 465,45 480,42
+             C 495,39 505,42 515,50
+             C 530,60 545,75 560,82
+             C 575,88 590,92 605,98
+             C 615,102 625,108 635,115"
+          fill="none" stroke="#27ae60" stroke-width="3.5" stroke-linecap="round"/>
+
+    <!-- Pause markers -->
+    <rect x="193" y="75" width="3" height="35" rx="1" fill="#e74c3c" opacity="0.6"/>
+    <text x="195" y="122" text-anchor="middle" class="arrow-label" fill="#e74c3c">停</text>
+
+    <rect x="358" y="87" width="3" height="35" rx="1" fill="#e74c3c" opacity="0.6"/>
+    <text x="360" y="134" text-anchor="middle" class="arrow-label" fill="#e74c3c">停</text>
+
+    <!-- Emphasis markers (dots above curve at key words) -->
+    <circle cx="140" cy="48" r="5" fill="#e74c3c" opacity="0.7"/>
+    <text x="140" y="40" text-anchor="middle" class="arrow-label" fill="#e74c3c">重音</text>
+
+    <circle cx="480" cy="32" r="5" fill="#e74c3c" opacity="0.7"/>
+    <text x="480" y="25" text-anchor="middle" class="arrow-label" fill="#e74c3c">重音</text>
+
+    <!-- Words below with emphasis -->
+    <text x="82" y="155" text-anchor="middle" class="word">这个</text>
+    <text x="145" y="155" text-anchor="middle" class="word-em">发现</text>
+    <text x="240" y="155" text-anchor="middle" class="word">改变了</text>
+    <text x="310" y="155" text-anchor="middle" class="word">我</text>
+    <text x="365" y="155" text-anchor="middle" class="word">对</text>
+    <text x="430" y="155" text-anchor="middle" class="word">学习的</text>
+    <text x="510" y="155" text-anchor="middle" class="word-em">整个</text>
+    <text x="590" y="155" text-anchor="middle" class="word">看法</text>
+    <text x="635" y="155" text-anchor="middle" class="word">。</text>
+
+    <!-- Speed brackets -->
+    <path d="M 60,170 L 60,175 L 195,175 L 195,170" fill="none" stroke="#3498db" stroke-width="1.2"/>
+    <text x="128" y="187" text-anchor="middle" class="arrow-label" fill="#3498db">正常</text>
+
+    <path d="M 200,170 L 200,175 L 360,175 L 360,170" fill="none" stroke="#e67e22" stroke-width="1.2"/>
+    <text x="280" y="187" text-anchor="middle" class="arrow-label" fill="#e67e22">稍快（过渡）</text>
+
+    <path d="M 365,170 L 365,175 L 640,175 L 640,170" fill="none" stroke="#8e44ad" stroke-width="1.2"/>
+    <text x="502" y="187" text-anchor="middle" class="arrow-label" fill="#8e44ad">放慢（重点结论）</text>
+  </g>
+
+  <!-- ===== BOTTOM LEGEND ===== -->
+  <g transform="translate(40, 495)">
+    <rect x="0" y="0" width="670" height="20" rx="4" fill="#f0f4f8" stroke="#dde3ea" stroke-width="1"/>
+
+    <!-- Flat line indicator -->
+    <line x1="15" y1="10" x2="40" y2="10" stroke="#95a5a6" stroke-width="3"/>
+    <text x="48" y="14" class="label-sm" fill="#666">平淡语调</text>
+
+    <!-- Expressive line indicator -->
+    <path d="M 145,13 C 155,7 165,5 175,10 C 185,15 195,12 205,8" fill="none" stroke="#27ae60" stroke-width="3"/>
+    <text x="213" y="14" class="label-sm" fill="#666">有表现力语调</text>
+
+    <!-- Pause indicator -->
+    <rect x="330" y="3" width="3" height="14" rx="1" fill="#e74c3c" opacity="0.7"/>
+    <text x="340" y="14" class="label-sm" fill="#666">停顿</text>
+
+    <!-- Emphasis indicator -->
+    <circle cx="400" cy="10" r="4" fill="#e74c3c" opacity="0.7"/>
+    <text x="410" y="14" class="label-sm" fill="#666">重音</text>
+
+    <!-- Speed brackets -->
+    <path d="M 470,4 L 470,7 L 500,7 L 500,4" fill="none" stroke="#3498db" stroke-width="1"/>
+    <text x="508" y="14" class="label-sm" fill="#666">语速标记</text>
+  </g>
+</svg>

@@ -1,0 +1,131 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 480" width="700" height="480">
+  <style>
+    text { font-family: 'Microsoft YaHei', 'PingFang SC', sans-serif; }
+    .title { font-size: 18px; font-weight: bold; fill: #2c3e50; }
+    .label { font-size: 14px; fill: #2c3e50; }
+    .sublabel { font-size: 12px; fill: #555; }
+    .analogy { font-size: 12px; fill: #e67e22; font-style: italic; }
+    .arrow-text { font-size: 11px; fill: #7f8c8d; }
+  </style>
+
+  <!-- Background -->
+  <rect width="700" height="480" fill="#fafbfc" rx="12"/>
+
+  <!-- Title -->
+  <text x="350" y="35" text-anchor="middle" class="title">发声系统三环节：动力 → 振动 → 扩音</text>
+
+  <!-- Section 1: 动力/气息 (Lungs) -->
+  <g transform="translate(60, 70)">
+    <!-- Box -->
+    <rect width="170" height="200" rx="10" fill="#eaf6ff" stroke="#3498db" stroke-width="2"/>
+    <text x="85" y="30" text-anchor="middle" class="label" font-weight="bold">① 动力：肺和横膈膜</text>
+
+    <!-- Simple lung illustration -->
+    <ellipse cx="85" cy="100" rx="40" ry="50" fill="none" stroke="#3498db" stroke-width="1.5" stroke-dasharray="4,2"/>
+    <ellipse cx="70" cy="95" rx="22" ry="35" fill="#d6eaf8" stroke="#3498db" stroke-width="1.5"/>
+    <ellipse cx="100" cy="95" rx="22" ry="35" fill="#d6eaf8" stroke="#3498db" stroke-width="1.5"/>
+
+    <!-- Diaphragm -->
+    <path d="M 35 140 Q 85 160 135 140" fill="none" stroke="#2980b9" stroke-width="2"/>
+    <text x="85" y="158" text-anchor="middle" class="sublabel">横膈膜</text>
+
+    <!-- Airflow arrows -->
+    <path d="M 85 75 L 85 55" fill="none" stroke="#3498db" stroke-width="1.5" marker-end="url(#arrowBlue)"/>
+
+    <text x="85" y="185" text-anchor="middle" class="analogy">≈ 吉他手拨弦的手</text>
+    <text x="85" y="198" text-anchor="middle" class="analogy">（提供能量）</text>
+  </g>
+
+  <!-- Arrow 1→2 -->
+  <g transform="translate(235, 150)">
+    <path d="M 0 10 L 40 10" fill="none" stroke="#95a5a6" stroke-width="2" marker-end="url(#arrowGray)"/>
+    <text x="20" y="30" text-anchor="middle" class="arrow-text">气流上行</text>
+  </g>
+
+  <!-- Section 2: 振动/声带 (Vocal cords) -->
+  <g transform="translate(280, 70)">
+    <rect width="170" height="200" rx="10" fill="#fef9e7" stroke="#f39c12" stroke-width="2"/>
+    <text x="85" y="30" text-anchor="middle" class="label" font-weight="bold">② 振动：声带</text>
+
+    <!-- Vocal cords illustration -->
+    <ellipse cx="85" cy="100" rx="35" ry="25" fill="none" stroke="#f39c12" stroke-width="1.5"/>
+    <!-- Two vocal folds -->
+    <path d="M 60 92 Q 85 105 110 92" fill="none" stroke="#e67e22" stroke-width="2.5"/>
+    <path d="M 60 108 Q 85 95 110 108" fill="none" stroke="#e67e22" stroke-width="2.5"/>
+    <!-- Gap between folds -->
+    <ellipse cx="85" cy="100" rx="8" ry="4" fill="#fdebd0" stroke="#f39c12" stroke-width="1"/>
+    <text x="85" y="140" text-anchor="middle" class="sublabel">声带（两片薄膜）</text>
+    <text x="85" y="155" text-anchor="middle" class="sublabel">气流通过时振动发声</text>
+
+    <text x="85" y="185" text-anchor="middle" class="analogy">≈ 吉他的琴弦</text>
+    <text x="85" y="198" text-anchor="middle" class="analogy">（产生声波）</text>
+  </g>
+
+  <!-- Arrow 2→3 -->
+  <g transform="translate(455, 150)">
+    <path d="M 0 10 L 40 10" fill="none" stroke="#95a5a6" stroke-width="2" marker-end="url(#arrowGray)"/>
+    <text x="20" y="30" text-anchor="middle" class="arrow-text">声波传入</text>
+  </g>
+
+  <!-- Section 3: 扩音/共鸣 (Resonance) -->
+  <g transform="translate(500, 70)">
+    <rect width="170" height="200" rx="10" fill="#f0faf0" stroke="#27ae60" stroke-width="2"/>
+    <text x="85" y="30" text-anchor="middle" class="label" font-weight="bold">③ 扩音：共鸣腔</text>
+
+    <!-- Head/throat resonance chambers -->
+    <!-- Head outline -->
+    <ellipse cx="85" cy="85" rx="30" ry="35" fill="none" stroke="#27ae60" stroke-width="1.5"/>
+    <!-- Mouth cavity -->
+    <ellipse cx="85" cy="80" rx="18" ry="10" fill="#d5f5e3" stroke="#27ae60" stroke-width="1"/>
+    <text x="85" y="84" text-anchor="middle" style="font-size:9px;fill:#27ae60;">口腔</text>
+    <!-- Nasal cavity -->
+    <ellipse cx="85" cy="62" rx="12" ry="7" fill="#d5f5e3" stroke="#27ae60" stroke-width="1"/>
+    <text x="85" y="65" text-anchor="middle" style="font-size:8px;fill:#27ae60;">鼻腔</text>
+    <!-- Throat -->
+    <rect x="75" y="115" width="20" height="20" rx="4" fill="#d5f5e3" stroke="#27ae60" stroke-width="1"/>
+    <text x="85" y="129" text-anchor="middle" style="font-size:8px;fill:#27ae60;">咽腔</text>
+    <!-- Chest -->
+    <rect x="65" y="140" width="40" height="18" rx="4" fill="#d5f5e3" stroke="#27ae60" stroke-width="1"/>
+    <text x="85" y="153" text-anchor="middle" style="font-size:8px;fill:#27ae60;">胸腔</text>
+
+    <text x="85" y="185" text-anchor="middle" class="analogy">≈ 吉他的琴箱</text>
+    <text x="85" y="198" text-anchor="middle" class="analogy">（放大和美化声音）</text>
+  </g>
+
+  <!-- Bottom summary: Guitar analogy -->
+  <g transform="translate(50, 310)">
+    <rect width="600" height="130" rx="10" fill="#f8f4ff" stroke="#8e44ad" stroke-width="1.5" stroke-dasharray="6,3"/>
+    <text x="300" y="28" text-anchor="middle" class="label" font-weight="bold" fill="#8e44ad">吉他类比总结</text>
+
+    <!-- Guitar body simplified -->
+    <path d="M 80 70 Q 80 50 100 50 L 200 50 Q 210 50 210 60 L 210 100 Q 210 110 200 110 L 100 110 Q 80 110 80 90 Z" fill="none" stroke="#8e44ad" stroke-width="1.5"/>
+    <circle cx="150" cy="80" r="15" fill="none" stroke="#8e44ad" stroke-width="1"/>
+    <!-- Neck -->
+    <line x1="210" y1="70" x2="280" y2="70" stroke="#8e44ad" stroke-width="2"/>
+    <line x1="210" y1="90" x2="280" y2="90" stroke="#8e44ad" stroke-width="2"/>
+    <!-- Strings -->
+    <line x1="100" y1="72" x2="280" y2="72" stroke="#c39bd3" stroke-width="0.8"/>
+    <line x1="100" y1="80" x2="280" y2="80" stroke="#c39bd3" stroke-width="0.8"/>
+    <line x1="100" y1="88" x2="280" y2="88" stroke="#c39bd3" stroke-width="0.8"/>
+
+    <!-- Labels -->
+    <text x="150" y="120" text-anchor="middle" class="sublabel" fill="#8e44ad">琴箱=共鸣腔</text>
+    <text x="245" y="60" text-anchor="middle" class="sublabel" fill="#8e44ad">琴弦=声带</text>
+
+    <!-- Right side text -->
+    <text x="340" y="60" class="sublabel">拨弦的手 → 气息（提供动力）</text>
+    <text x="340" y="80" class="sublabel">琴弦振动 → 声带振动（产生声波）</text>
+    <text x="340" y="100" class="sublabel">琴箱放大 → 共鸣腔放大（美化声音）</text>
+    <text x="340" y="120" class="analogy">三者协作，缺一不可！</text>
+  </g>
+
+  <!-- Arrow markers -->
+  <defs>
+    <marker id="arrowBlue" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+      <path d="M 0 0 L 8 4 L 0 8 Z" fill="#3498db"/>
+    </marker>
+    <marker id="arrowGray" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+      <path d="M 0 0 L 8 4 L 0 8 Z" fill="#95a5a6"/>
+    </marker>
+  </defs>
+</svg>

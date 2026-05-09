@@ -1,0 +1,127 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 750 580" width="750" height="580">
+  <style>
+    text { font-family: 'Microsoft YaHei', 'PingFang SC', sans-serif; }
+    .title { font-size: 18px; font-weight: bold; fill: #2c3e50; }
+    .label { font-size: 14px; fill: #2c3e50; }
+    .sublabel { font-size: 12px; fill: #555; }
+    .quality { font-size: 12px; font-weight: bold; }
+    .analogy { font-size: 12px; fill: #e67e22; font-style: italic; }
+  </style>
+
+  <!-- Background -->
+  <rect width="750" height="580" fill="#fafbfc" rx="12"/>
+
+  <!-- Title -->
+  <text x="375" y="35" text-anchor="middle" class="title">人体共鸣腔体：你的四个"音箱"</text>
+
+  <!-- Head and torso outline -->
+  <g transform="translate(180, 50)">
+    <!-- Torso body -->
+    <path d="M 100 180 Q 100 160 110 150 L 120 130 Q 130 120 140 115
+             Q 155 108 170 105 Q 185 102 200 100
+             Q 215 102 230 105 Q 245 108 260 115
+             Q 270 120 280 130 L 290 150 Q 300 160 300 180
+             L 305 280 Q 308 350 300 420 L 290 470 L 110 470
+             L 100 420 Q 92 350 95 280 Z"
+          fill="#f8f9fa" stroke="#5d6d7e" stroke-width="1.5"/>
+
+    <!-- Head outline -->
+    <path d="M 145 100 Q 145 40 200 30 Q 255 40 255 100 Q 255 115 240 120
+             Q 220 125 200 125 Q 180 125 160 120 Q 145 115 145 100 Z"
+          fill="#f8f9fa" stroke="#5d6d7e" stroke-width="1.5"/>
+
+    <!-- Neck -->
+    <rect x="175" y="120" width="50" height="35" fill="#f8f9fa" stroke="#5d6d7e" stroke-width="1"/>
+
+    <!-- === Nasal Cavity (鼻腔) === -->
+    <ellipse cx="200" cy="72" rx="22" ry="18" fill="#e8daef" stroke="#8e44ad" stroke-width="2" opacity="0.7"/>
+    <text x="200" y="76" text-anchor="middle" style="font-size:11px;fill:#6c3483;font-weight:bold;">鼻腔</text>
+
+    <!-- === Oral Cavity (口腔) === -->
+    <ellipse cx="200" cy="100" rx="28" ry="15" fill="#d4efdf" stroke="#27ae60" stroke-width="2" opacity="0.7"/>
+    <text x="200" y="104" text-anchor="middle" style="font-size:11px;fill:#1e8449;font-weight:bold;">口腔</text>
+
+    <!-- === Pharynx (咽腔) === -->
+    <path d="M 185 115 Q 185 128 187 140 L 213 140 Q 215 128 215 115 Z"
+          fill="#d6eaf8" stroke="#2980b9" stroke-width="2" opacity="0.7"/>
+    <text x="200" y="132" text-anchor="middle" style="font-size:10px;fill:#1a5276;font-weight:bold;">咽腔</text>
+
+    <!-- Vocal cords indicator -->
+    <line x1="188" y1="145" x2="212" y2="145" stroke="#e74c3c" stroke-width="2.5"/>
+    <text x="200" y="160" text-anchor="middle" style="font-size:9px;fill:#c0392b;">— 声带 —</text>
+
+    <!-- === Chest Cavity (胸腔) === -->
+    <ellipse cx="200" cy="280" rx="75" ry="95" fill="#fdebd0" stroke="#e67e22" stroke-width="2" opacity="0.5"/>
+    <text x="200" y="270" text-anchor="middle" style="font-size:13px;fill:#af601a;font-weight:bold;">胸腔</text>
+    <text x="200" y="290" text-anchor="middle" style="font-size:10px;fill:#af601a;">（最大的共鸣空间）</text>
+
+    <!-- Sound wave arrows going up from vocal cords -->
+    <g opacity="0.6">
+      <path d="M 200 162 C 195 170 205 178 200 186 C 195 194 205 202 200 210"
+            fill="none" stroke="#e74c3c" stroke-width="1.5" stroke-dasharray="4,2"/>
+      <path d="M 192 162 C 187 175 182 188 185 200"
+            fill="none" stroke="#e74c3c" stroke-width="1" stroke-dasharray="3,2"/>
+      <path d="M 208 162 C 213 175 218 188 215 200"
+            fill="none" stroke="#e74c3c" stroke-width="1" stroke-dasharray="3,2"/>
+    </g>
+  </g>
+
+  <!-- Right side: labels and qualities -->
+  <g transform="translate(500, 70)">
+    <!-- Nasal label -->
+    <g transform="translate(0, 20)">
+      <rect x="0" y="0" width="200" height="50" rx="8" fill="#f5eef8" stroke="#8e44ad" stroke-width="1.5"/>
+      <text x="15" y="20" class="label" fill="#6c3483" font-weight="bold">鼻腔共鸣</text>
+      <text x="15" y="38" class="quality" fill="#8e44ad">圆润 · 柔和 · 有色彩</text>
+      <line x1="-120" y1="25" x2="0" y2="25" stroke="#8e44ad" stroke-width="1" stroke-dasharray="4,3"/>
+    </g>
+
+    <!-- Oral label -->
+    <g transform="translate(0, 90)">
+      <rect x="0" y="0" width="200" height="50" rx="8" fill="#eafaf1" stroke="#27ae60" stroke-width="1.5"/>
+      <text x="15" y="20" class="label" fill="#1e8449" font-weight="bold">口腔共鸣</text>
+      <text x="15" y="38" class="quality" fill="#27ae60">明亮 · 清晰 · 穿透力</text>
+      <line x1="-115" y1="25" x2="0" y2="25" stroke="#27ae60" stroke-width="1" stroke-dasharray="4,3"/>
+    </g>
+
+    <!-- Pharynx label -->
+    <g transform="translate(0, 160)">
+      <rect x="0" y="0" width="200" height="50" rx="8" fill="#ebf5fb" stroke="#2980b9" stroke-width="1.5"/>
+      <text x="15" y="20" class="label" fill="#1a5276" font-weight="bold">咽腔共鸣</text>
+      <text x="15" y="38" class="quality" fill="#2980b9">响亮 · 通透 · 有厚度</text>
+      <line x1="-110" y1="25" x2="0" y2="25" stroke="#2980b9" stroke-width="1" stroke-dasharray="4,3"/>
+    </g>
+
+    <!-- Chest label -->
+    <g transform="translate(0, 280)">
+      <rect x="0" y="0" width="200" height="50" rx="8" fill="#fef5e7" stroke="#e67e22" stroke-width="1.5"/>
+      <text x="15" y="20" class="label" fill="#af601a" font-weight="bold">胸腔共鸣</text>
+      <text x="15" y="38" class="quality" fill="#e67e22">低沉 · 浑厚 · 有底气</text>
+      <line x1="-105" y1="25" x2="0" y2="25" stroke="#e67e22" stroke-width="1" stroke-dasharray="4,3"/>
+    </g>
+  </g>
+
+  <!-- Left side: analogies -->
+  <g transform="translate(20, 70)">
+    <g transform="translate(0, 20)">
+      <text x="60" y="25" text-anchor="middle" class="analogy">高音喇叭</text>
+    </g>
+    <g transform="translate(0, 90)">
+      <text x="60" y="25" text-anchor="middle" class="analogy">调音台</text>
+    </g>
+    <g transform="translate(0, 160)">
+      <text x="60" y="25" text-anchor="middle" class="analogy">音量旋钮</text>
+    </g>
+    <g transform="translate(0, 280)">
+      <text x="60" y="25" text-anchor="middle" class="analogy">低音炮</text>
+    </g>
+  </g>
+
+  <!-- Bottom insight box -->
+  <g transform="translate(40, 490)">
+    <rect width="670" height="75" rx="10" fill="#fef9e7" stroke="#f39c12" stroke-width="1.5"/>
+    <text x="335" y="25" text-anchor="middle" class="label" font-weight="bold" fill="#e67e22">核心原理：共鸣是"借力放大"，不是"使劲喊"</text>
+    <text x="335" y="48" text-anchor="middle" class="sublabel">没插音箱的电吉他 → 声音微弱（只有声带振动）</text>
+    <text x="335" y="66" text-anchor="middle" class="sublabel">接上音箱（打开共鸣腔）→ 声音饱满响亮（声波在腔体中被反射放大）</text>
+  </g>
+</svg>

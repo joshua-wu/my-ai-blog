@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 750 520" width="750" height="520">
+  <defs>
+    <linearGradient id="phase1Grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#e8f5e9;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#c8e6c9;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="phase2Grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#e3f2fd;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#bbdefb;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="phase3Grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#fce4ec;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#f8bbd0;stop-opacity:1"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="750" height="520" fill="#fafafa" rx="12"/>
+
+  <!-- Title -->
+  <text x="375" y="38" text-anchor="middle" font-family="'Microsoft YaHei', 'PingFang SC', sans-serif" font-size="18" font-weight="bold" fill="#333">每日训练计划 — 三阶段递进</text>
+
+  <!-- Timeline axis -->
+  <line x1="80" y1="75" x2="680" y2="75" stroke="#bbb" stroke-width="2" stroke-linecap="round"/>
+  <!-- Week markers -->
+  <circle cx="80" cy="75" r="5" fill="#666"/>
+  <circle cx="230" cy="75" r="5" fill="#666"/>
+  <circle cx="430" cy="75" r="5" fill="#666"/>
+  <circle cx="680" cy="75" r="5" fill="#666"/>
+  <text x="80" y="63" text-anchor="middle" font-family="'Microsoft YaHei', 'PingFang SC', sans-serif" font-size="11" fill="#666">第1天</text>
+  <text x="230" y="63" text-anchor="middle" font-family="'Microsoft YaHei', 'PingFang SC', sans-serif" font-size="11" fill="#666">第2周末</text>
+  <text x="430" y="63" text-anchor="middle" font-family="'Microsoft YaHei', 'PingFang SC', sans-serif" font-size="11" fill="#666">第4周末</text>
+  <text x="680" y="63" text-anchor="middle" font-family="'Microsoft YaHei', 'PingFang SC', sans-serif" font-size="11" fill="#666">第5周+</text>
+
+  <!-- Arrows between phases -->
+  <path d="M230,75 L240,70 L240,80 Z" fill="#666"/>
+  <path d="M430,75 L440,70 L440,80 Z" fill="#666"/>
+
+  <!-- Phase 1: Entry period -->
+  <rect x="40" y="95" width="210" height="170" rx="10" fill="url(#phase1Grad)" stroke="#66bb6a" stroke-width="1.5"/>
+  <text x="145" y="118" text-anchor="middle" font-family="'Microsoft YaHei', 'PingFang SC', sans-serif" font-size="14" font-weight="bold" fill="#2e7d32">入门期</text>
+  <text x="145" y="136" text-anchor="middle" font-family="'Microsoft YaHei', 'PingFang SC', sans-serif" font-size="11" fill="#388e3c">第1-2周 · 每天5分钟</text>
+
+  <!-- Phase 1 content -->
+  <rect x="55" y="148" width="180" height="22" rx="4" fill="#fff" fill-opacity="0.7"/>
+  <text x="65" y="163" font-family="'Microsoft YaHei', 'PingFang SC', sans-serif" font-size="11" fill="#333">🫁 腹式呼吸（3分钟）</text>
+  <rect x="55" y="176" width="180" height="22" rx="4" fill="#fff" fill-opacity="0.7"/>
+  <text x="65" y="191" font-family="'Microsoft YaHei', 'PingFang SC', sans-serif" font-size="11" fill="#333">🎵 哼鸣共鸣（2分钟）</text>
+
+  <text x="145" y="225" text-anchor="middle" font-family="'Microsoft YaHei', 'PingFang SC', sans-serif" font-size="10" fill="#555" font-style="italic">目标：建立呼吸感觉</text>
+  <text x="145" y="240" text-anchor="middle" font-family="'Microsoft YaHei', 'PingFang SC', sans-serif" font-size="10" fill="#555" font-style="italic">养成每天练习的习惯</text>
+
+  <!-- Phase 2: Consolidation -->
+  <rect x="270" y="95" width="210" height="170" rx="10" fill="url(#phase2Grad)" stroke="#42a5f5" stroke-width="1.5"/>
+  <text x="375" y="118" text-anchor="middle" font-family="'Microsoft YaHei', 'PingFang SC', sans-serif" font-size="14" font-weight="bold" fill="#1565c0">巩固期</text>
+  <text x="375" y="136" text-anchor="middle" font-family="'Microsoft YaHei', 'PingFang SC', sans-serif" font-size="11" fill="#1976d2">第3-4周 · 每天10分钟</text>
+
+  <!-- Phase 2 content -->
+  <rect x="285" y="148" width="180" height="22" rx="4" fill="#fff" fill-opacity="0.7"/>
+  <text x="295" y="163" font-family="'Microsoft YaHei', 'PingFang SC', sans-serif" font-size="11" fill="#333">🫁 呼吸+共鸣热身（3分钟）</text>
+  <rect x="285" y="176" width="180" height="22" rx="4" fill="#fff" fill-opacity="0.7"/>
+  <text x="295" y="191" font-family="'Microsoft YaHei', 'PingFang SC', sans-serif" font-size="11" fill="#333">👄 吐字练习（4分钟）</text>
+  <rect x="285" y="204" width="180" height="22" rx="4" fill="#fff" fill-opacity="0.7"/>
+  <text x="295" y="219" font-family="'Microsoft YaHei', 'PingFang SC', sans-serif" font-size="11" fill="#333">🗣️ 表达力练习（3分钟）</text>
+
+  <text x="375" y="250" text-anchor="middle" font-family="'Microsoft YaHei', 'PingFang SC', sans-serif" font-size="10" fill="#555" font-style="italic">目标：练习模块扩展</text>
+
+  <!-- Phase 3: Advanced -->
+  <rect x="500" y="95" width="210" height="170" rx="10" fill="url(#phase3Grad)" stroke="#ec407a" stroke-width="1.5"/>
+  <text x="605" y="118" text-anchor="middle" font-family="'Microsoft YaHei', 'PingFang SC', sans-serif" font-size="14" font-weight="bold" fill="#c2185b">进阶期</text>
+  <text x="605" y="136" text-anchor="middle" font-family="'Microsoft YaHei', 'PingFang SC', sans-serif" font-size="11" fill="#d81b60">第5周+ · 每天15分钟</text>
+
+  <!-- Phase 3 content -->
+  <rect x="515" y="148" width="180" height="22" rx="4" fill="#fff" fill-opacity="0.7"/>
+  <text x="525" y="163" font-family="'Microsoft YaHei', 'PingFang SC', sans-serif" font-size="11" fill="#333">🫁 呼吸+共鸣（3分钟）</text>
+  <rect x="515" y="176" width="180" height="22" rx="4" fill="#fff" fill-opacity="0.7"/>
+  <text x="525" y="191" font-family="'Microsoft YaHei', 'PingFang SC', sans-serif" font-size="11" fill="#333">👄 吐字热身（3分钟）</text>
+  <rect x="515" y="204" width="180" height="22" rx="4" fill="#fff" fill-opacity="0.7"/>
+  <text x="525" y="219" font-family="'Microsoft YaHei', 'PingFang SC', sans-serif" font-size="11" fill="#333">🗣️ 表达力组合（4分钟）</text>
+  <rect x="515" y="232" width="180" height="22" rx="4" fill="#fff" fill-opacity="0.7"/>
+  <text x="525" y="247" font-family="'Microsoft YaHei', 'PingFang SC', sans-serif" font-size="11" fill="#333">🎤 实战朗读（5分钟）</text>
+
+  <!-- Bottom section: Daily stealth practice -->
+  <rect x="40" y="285" width="670" height="100" rx="10" fill="#fff8e1" stroke="#ffb300" stroke-width="1.5"/>
+  <text x="375" y="308" text-anchor="middle" font-family="'Microsoft YaHei', 'PingFang SC', sans-serif" font-size="13" font-weight="bold" fill="#f57f17">随时随地偷偷练</text>
+
+  <text x="80" y="332" font-family="'Microsoft YaHei', 'PingFang SC', sans-serif" font-size="11" fill="#555">🛗 等电梯</text>
+  <text x="80" y="349" font-family="'Microsoft YaHei', 'PingFang SC', sans-serif" font-size="10" fill="#777">腹式深呼吸3次</text>
+
+  <text x="250" y="332" font-family="'Microsoft YaHei', 'PingFang SC', sans-serif" font-size="11" fill="#555">🚗 开车/通勤</text>
+  <text x="250" y="349" font-family="'Microsoft YaHei', 'PingFang SC', sans-serif" font-size="10" fill="#777">哼鸣共鸣练习</text>
+
+  <text x="430" y="332" font-family="'Microsoft YaHei', 'PingFang SC', sans-serif" font-size="11" fill="#555">🚿 洗澡时</text>
+  <text x="430" y="349" font-family="'Microsoft YaHei', 'PingFang SC', sans-serif" font-size="10" fill="#777">全套共鸣+朗读</text>
+
+  <text x="600" y="332" font-family="'Microsoft YaHei', 'PingFang SC', sans-serif" font-size="11" fill="#555">📱 开会前</text>
+  <text x="600" y="349" font-family="'Microsoft YaHei', 'PingFang SC', sans-serif" font-size="10" fill="#777">弹唇弹舌热身30秒</text>
+
+  <text x="375" y="375" text-anchor="middle" font-family="'Microsoft YaHei', 'PingFang SC', sans-serif" font-size="10" fill="#888" font-style="italic">利用碎片时间，不占额外精力，让练习融入生活</text>
+
+  <!-- Progress tracking section -->
+  <rect x="40" y="400" width="670" height="105" rx="10" fill="#f3e5f5" stroke="#ab47bc" stroke-width="1.5"/>
+  <text x="375" y="423" text-anchor="middle" font-family="'Microsoft YaHei', 'PingFang SC', sans-serif" font-size="13" font-weight="bold" fill="#6a1b9a">评估进步的三种方法</text>
+
+  <!-- Method 1 -->
+  <rect x="55" y="435" width="200" height="55" rx="6" fill="#fff" fill-opacity="0.7"/>
+  <text x="155" y="455" text-anchor="middle" font-family="'Microsoft YaHei', 'PingFang SC', sans-serif" font-size="11" font-weight="bold" fill="#7b1fa2">录音对比法</text>
+  <text x="155" y="472" text-anchor="middle" font-family="'Microsoft YaHei', 'PingFang SC', sans-serif" font-size="10" fill="#666">每周录同一段话</text>
+  <text x="155" y="485" text-anchor="middle" font-family="'Microsoft YaHei', 'PingFang SC', sans-serif" font-size="10" fill="#666">前后对比听变化</text>
+
+  <!-- Method 2 -->
+  <rect x="275" y="435" width="200" height="55" rx="6" fill="#fff" fill-opacity="0.7"/>
+  <text x="375" y="455" text-anchor="middle" font-family="'Microsoft YaHei', 'PingFang SC', sans-serif" font-size="11" font-weight="bold" fill="#7b1fa2">体感自检</text>
+  <text x="375" y="472" text-anchor="middle" font-family="'Microsoft YaHei', 'PingFang SC', sans-serif" font-size="10" fill="#666">呼吸深度、喉咙舒适度</text>
+  <text x="375" y="485" text-anchor="middle" font-family="'Microsoft YaHei', 'PingFang SC', sans-serif" font-size="10" fill="#666">嘴巴灵活度、说话底气</text>
+
+  <!-- Method 3 -->
+  <rect x="495" y="435" width="200" height="55" rx="6" fill="#fff" fill-opacity="0.7"/>
+  <text x="595" y="455" text-anchor="middle" font-family="'Microsoft YaHei', 'PingFang SC', sans-serif" font-size="11" font-weight="bold" fill="#7b1fa2">里程碑确认</text>
+  <text x="595" y="472" text-anchor="middle" font-family="'Microsoft YaHei', 'PingFang SC', sans-serif" font-size="10" fill="#666">数数续航延长</text>
+  <text x="595" y="485" text-anchor="middle" font-family="'Microsoft YaHei', 'PingFang SC', sans-serif" font-size="10" fill="#666">别人夸你声音好听</text>
+
+</svg>

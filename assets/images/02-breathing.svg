@@ -1,0 +1,138 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 750 520" width="750" height="520">
+  <style>
+    text { font-family: 'Microsoft YaHei', 'PingFang SC', sans-serif; }
+    .title { font-size: 18px; font-weight: bold; fill: #2c3e50; }
+    .label { font-size: 14px; fill: #2c3e50; }
+    .sublabel { font-size: 12px; fill: #555; }
+    .analogy { font-size: 12px; fill: #e67e22; font-style: italic; }
+    .highlight { font-size: 13px; fill: #27ae60; font-weight: bold; }
+    .warning { font-size: 11px; fill: #c0392b; }
+  </style>
+
+  <!-- Background -->
+  <rect width="750" height="520" fill="#fafbfc" rx="12"/>
+
+  <!-- Title -->
+  <text x="375" y="35" text-anchor="middle" class="title">胸式呼吸 vs 腹式呼吸：身体状态对比</text>
+
+  <!-- Left: 胸式呼吸 -->
+  <g transform="translate(40, 60)">
+    <rect width="310" height="350" rx="10" fill="#fef0f0" stroke="#e74c3c" stroke-width="1.5" stroke-dasharray="6,3"/>
+    <text x="155" y="30" text-anchor="middle" class="label" font-weight="bold" fill="#c0392b">胸式呼吸（小鱼模式）</text>
+
+    <!-- Human torso outline -->
+    <g transform="translate(75, 50)">
+      <!-- Torso -->
+      <path d="M 50 0 Q 80 0 100 20 L 115 80 Q 120 140 110 200 L 100 250 L 60 250 L 50 200 Q 40 140 45 80 L 60 20 Q 70 0 50 0" fill="#fde8e8" stroke="#c0392b" stroke-width="1.5"/>
+
+      <!-- Shoulders with UP arrows -->
+      <path d="M 30 15 L 50 5" fill="none" stroke="#c0392b" stroke-width="2"/>
+      <path d="M 130 15 L 110 5" fill="none" stroke="#c0392b" stroke-width="2"/>
+      <!-- Shoulder arrows pointing UP -->
+      <polygon points="45,2 50,0 48,7" fill="#e74c3c"/>
+      <polygon points="115,2 110,0 112,7" fill="#e74c3c"/>
+      <text x="10" y="10" class="warning">肩膀上抬 ↑</text>
+
+      <!-- Chest area highlighted (expanded) -->
+      <ellipse cx="80" cy="70" rx="30" ry="25" fill="#f5b7b1" stroke="#e74c3c" stroke-width="1.5" opacity="0.7"/>
+      <text x="80" y="74" text-anchor="middle" style="font-size:11px;fill:#c0392b;font-weight:bold;">胸口鼓起</text>
+
+      <!-- Lungs - only top half filled -->
+      <path d="M 55 45 Q 55 35 65 35 L 75 35 Q 80 35 80 45 L 80 90 Q 80 100 70 100 L 60 100 Q 55 100 55 90 Z" fill="none" stroke="#e74c3c" stroke-width="1" stroke-dasharray="3,2"/>
+      <path d="M 80 45 Q 80 35 85 35 L 95 35 Q 105 35 105 45 L 105 90 Q 105 100 95 100 L 85 100 Q 80 100 80 90 Z" fill="none" stroke="#e74c3c" stroke-width="1" stroke-dasharray="3,2"/>
+      <!-- Only top half filled with air -->
+      <rect x="57" y="38" width="21" height="30" rx="5" fill="#f5b7b1" opacity="0.5"/>
+      <rect x="82" y="38" width="21" height="30" rx="5" fill="#f5b7b1" opacity="0.5"/>
+
+      <!-- Diaphragm - HIGH position (barely moves) -->
+      <path d="M 45 105 Q 80 95 115 105" fill="none" stroke="#7f8c8d" stroke-width="2"/>
+      <text x="135" y="103" class="sublabel" fill="#7f8c8d">横膈膜</text>
+      <text x="135" y="117" style="font-size:10px;fill:#95a5a6;">（几乎不动）</text>
+
+      <!-- Belly - flat -->
+      <path d="M 55 130 Q 80 130 105 130" fill="none" stroke="#bdc3c7" stroke-width="1.5"/>
+      <text x="80" y="150" text-anchor="middle" style="font-size:10px;fill:#7f8c8d;">肚子平平的</text>
+
+      <!-- Small air flow arrows (shallow) -->
+      <path d="M 80 25 L 80 35" fill="none" stroke="#e74c3c" stroke-width="1" marker-end="url(#arrowRed)"/>
+      <text x="80" y="20" text-anchor="middle" style="font-size:9px;fill:#e74c3c;">气只到这里</text>
+    </g>
+
+    <!-- Summary -->
+    <text x="155" y="315" text-anchor="middle" class="analogy">像鱼缸小鱼：浅、快、不稳</text>
+    <text x="155" y="335" text-anchor="middle" style="font-size:11px;fill:#c0392b;">❌ 每次只用半个肺</text>
+  </g>
+
+  <!-- Center: VS -->
+  <g transform="translate(355, 200)">
+    <circle cx="20" cy="30" r="25" fill="#ecf0f1" stroke="#bdc3c7" stroke-width="1.5"/>
+    <text x="20" y="36" text-anchor="middle" style="font-size:16px;font-weight:bold;fill:#7f8c8d;">VS</text>
+  </g>
+
+  <!-- Right: 腹式呼吸 -->
+  <g transform="translate(400, 60)">
+    <rect width="310" height="350" rx="10" fill="#eafaf1" stroke="#27ae60" stroke-width="1.5"/>
+    <text x="155" y="30" text-anchor="middle" class="label" font-weight="bold" fill="#1e8449">腹式呼吸（潜水员模式）</text>
+
+    <!-- Human torso outline -->
+    <g transform="translate(75, 50)">
+      <!-- Torso -->
+      <path d="M 50 0 Q 80 0 100 20 L 115 80 Q 120 140 110 200 L 100 250 L 60 250 L 50 200 Q 40 140 45 80 L 60 20 Q 70 0 50 0" fill="#d5f5e3" stroke="#27ae60" stroke-width="1.5"/>
+
+      <!-- Shoulders STABLE -->
+      <path d="M 30 15 L 50 15" fill="none" stroke="#27ae60" stroke-width="2"/>
+      <path d="M 110 15 L 130 15" fill="none" stroke="#27ae60" stroke-width="2"/>
+      <text x="10" y="10" style="font-size:10px;fill:#27ae60;">肩膀不动 —</text>
+
+      <!-- Chest area - NOT highlighted -->
+      <ellipse cx="80" cy="70" rx="30" ry="25" fill="none" stroke="#27ae60" stroke-width="1" stroke-dasharray="3,2" opacity="0.5"/>
+
+      <!-- Lungs - FULLY filled -->
+      <path d="M 55 45 Q 55 35 65 35 L 75 35 Q 80 35 80 45 L 80 100 Q 80 110 70 110 L 60 110 Q 55 110 55 100 Z" fill="#a9dfbf" stroke="#27ae60" stroke-width="1.5" opacity="0.7"/>
+      <path d="M 80 45 Q 80 35 85 35 L 95 35 Q 105 35 105 45 L 105 100 Q 105 110 95 110 L 85 110 Q 80 110 80 100 Z" fill="#a9dfbf" stroke="#27ae60" stroke-width="1.5" opacity="0.7"/>
+      <text x="80" y="80" text-anchor="middle" style="font-size:10px;fill:#1e8449;font-weight:bold;">整个肺充满</text>
+
+      <!-- Deep air flow arrows -->
+      <path d="M 80 25 L 80 100" fill="none" stroke="#27ae60" stroke-width="1.5" marker-end="url(#arrowGreen)"/>
+      <text x="30" y="65" style="font-size:9px;fill:#27ae60;">气息深入↓</text>
+
+      <!-- Diaphragm - LOW position (pushed down) -->
+      <path d="M 45 120 Q 80 135 115 120" fill="none" stroke="#1e8449" stroke-width="2.5"/>
+      <text x="135" y="125" class="sublabel" fill="#1e8449">横膈膜</text>
+      <text x="135" y="139" style="font-size:10px;fill:#27ae60;font-weight:bold;">（下压）↓</text>
+
+      <!-- Arrow showing diaphragm push down -->
+      <path d="M 80 110 L 80 125" fill="none" stroke="#1e8449" stroke-width="1.5" marker-end="url(#arrowGreen)"/>
+
+      <!-- Belly - expanded outward -->
+      <path d="M 50 145 Q 80 165 110 145" fill="#a9dfbf" stroke="#27ae60" stroke-width="2" opacity="0.5"/>
+      <text x="80" y="180" text-anchor="middle" style="font-size:11px;fill:#1e8449;font-weight:bold;">肚子鼓起 ↓</text>
+
+      <!-- Outward arrows on belly -->
+      <path d="M 65 155 L 55 160" fill="none" stroke="#27ae60" stroke-width="1.5" marker-end="url(#arrowGreen)"/>
+      <path d="M 95 155 L 105 160" fill="none" stroke="#27ae60" stroke-width="1.5" marker-end="url(#arrowGreen)"/>
+    </g>
+
+    <!-- Summary -->
+    <text x="155" y="315" text-anchor="middle" class="analogy">像潜水员：深、慢、持久</text>
+    <text x="155" y="335" text-anchor="middle" style="font-size:11px;fill:#1e8449;">✓ 整个肺都在工作</text>
+  </g>
+
+  <!-- Bottom: Key insight -->
+  <g transform="translate(40, 430)">
+    <rect width="670" height="75" rx="10" fill="#fef9e7" stroke="#f39c12" stroke-width="1.5"/>
+    <text x="335" y="25" text-anchor="middle" class="label" font-weight="bold" fill="#e67e22">关键原理：横膈膜是控制气息的"活塞"</text>
+    <text x="335" y="48" text-anchor="middle" class="sublabel">吸气时：横膈膜下压 → 肺扩张 → 空气被吸入 → 肚子往外鼓</text>
+    <text x="335" y="66" text-anchor="middle" class="sublabel">呼气时：横膈膜回弹 → 肺收缩 → 气流往上推 → 肚子往回收 → 声带被驱动</text>
+  </g>
+
+  <!-- Arrow markers -->
+  <defs>
+    <marker id="arrowRed" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+      <path d="M 0 0 L 8 4 L 0 8 Z" fill="#e74c3c"/>
+    </marker>
+    <marker id="arrowGreen" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+      <path d="M 0 0 L 8 4 L 0 8 Z" fill="#27ae60"/>
+    </marker>
+  </defs>
+</svg>
