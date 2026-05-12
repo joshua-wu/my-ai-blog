@@ -2,8 +2,8 @@
 title: "马斯克解散xAI：最不缺钱的人为何先退场"
 date: 2026-05-11
 layout: post
+cover: "/assets/images/fig_1_xai.png"
 ---
-
 马斯克把xAI解散了。
 
 没有预告，没有挣扎，22万张GPU打包租给了Anthropic——对，就是那个他嘴上天天骂的竞争对手。全球最有钱的男人，AI赛道上最大嗓门的玩家，说不玩就不玩了。

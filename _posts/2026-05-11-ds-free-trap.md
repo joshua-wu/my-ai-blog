@@ -1,8 +1,8 @@
 ---
 title: "当DeepSeek宣布免费，我想起了MongoDB涨价那年"
 date: 2026-05-11
+cover: "/assets/images/ds-free-trap-fig_2.png"
 ---
-
 DeepSeek-V4-Flash 宣布 API 免费那天，掘金社区炸了。评论区清一色"良心企业""国产之光""OpenAI该慌了"。
 
 作为一个经历过 MongoDB 免费→SSPL收费、Docker Desktop 突然对企业收费、Heroku 砍掉免费tier 这一整套剧本的老开发者，我对"免费"这个词有条件反射式的警觉。

@@ -2,8 +2,8 @@
 title: "我写了0行代码，却是最累的一天"
 date: 2026-05-11
 layout: post
+cover: "/assets/images/fig_1.png"
 ---
-
 # 我写了0行代码，却是最累的一天
 
 上个月我用Codex写了一个完整的CRUD模块。

@@ -2,8 +2,8 @@
 title: "ChatGPT在一本正经地胡说八道"
 date: 2026-05-11
 layout: post
+cover: "/assets/images/ai-hallucination-fig_1.png"
 ---
-
 # ChatGPT在一本正经地胡说八道
 
 你让ChatGPT帮你查一个法律条文。

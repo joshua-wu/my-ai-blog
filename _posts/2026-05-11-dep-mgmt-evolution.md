@@ -1,8 +1,8 @@
 ---
 title: "第三次换包管理器，我麻了"
 date: 2026-05-11
+cover: "/assets/images/dep-mgmt-fig_2.png"
 ---
-
 你有没有过这种经历——周五下午，手头的活儿快收尾了，想着更新一下Flutter版本，结果终端里蹦出一行红字：CocoaPods will be removed in a future release。
 
 空气突然安静。

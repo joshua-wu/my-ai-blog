@@ -1,0 +1,93 @@
+---
+layout: default
+title: Home
+---
+
+<style>
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  padding: 16px 0;
+}
+
+@media (min-width: 600px) {
+  .grid-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 900px) {
+  .grid-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.grid-card {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.grid-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  text-decoration: none;
+  color: inherit;
+}
+
+.grid-card-img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  display: block;
+}
+
+.grid-card-placeholder {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2em;
+  color: rgba(255,255,255,0.6);
+}
+
+.grid-card-title {
+  padding: 10px 12px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.4;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+@media (min-width: 600px) {
+  .grid-card-title {
+    font-size: 15px;
+  }
+}
+</style>
+
+<div class="grid-container">
+  {% for post in site.posts %}
+  <a class="grid-card" href="{{ post.url | relative_url }}">
+    {% if post.cover %}
+      <img class="grid-card-img" src="{{ post.cover | relative_url }}" alt="{{ post.title }}" loading="lazy">
+    {% else %}
+      {% assign hue = forloop.index0 | modulo: 6 | times: 60 %}
+      <div class="grid-card-placeholder" style="background: linear-gradient(135deg, hsl({{ hue }}, 60%, 65%), hsl({{ hue | plus: 40 }}, 50%, 45%));">
+        &#9998;
+      </div>
+    {% endif %}
+    <div class="grid-card-title">{{ post.title }}</div>
+  </a>
+  {% endfor %}
+</div>

@@ -2,8 +2,8 @@
 title: "你的1on1，正在默默杀死你的晋升"
 date: 2026-05-12
 layout: post
+cover: "/assets/images/fig_1.png"
 ---
-
 "最近工作怎么样？"
 
 "还行。"

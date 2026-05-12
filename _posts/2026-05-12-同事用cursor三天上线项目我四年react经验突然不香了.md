@@ -2,8 +2,8 @@
 title: "同事用Cursor三天上线项目，我四年React经验突然不香了"
 date: 2026-05-12
 layout: post
+cover: "/assets/images/fig_1.png"
 ---
-
 前两天刷掘金，看到一个帖子——"AI时代还纠结Vue还是React吗"。评论区300多条，吵得跟PR review的comment thread似的。Vue党说生态好上手快，React党说hooks优雅大厂标配，还有人跳出来喊"Svelte才是未来"。
 
 我翻了二十分钟，突然觉得哪里不对劲。

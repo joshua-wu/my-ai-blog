@@ -2,8 +2,8 @@
 layout: post
 title: "别学AI提示词了，PM真正该学的是这个"
 date: 2026-05-11
+cover: "/assets/images/fig_1.png"
 ---
-
 # 别学AI提示词了，PM真正该学的是这个
 
 上周，我亲眼目睹了一场"职场谋杀"。
