@@ -1,7 +1,7 @@
 ---
 title: "你老板看了个AI Agent的Demo，然后你的噩梦开始了"
 date: 2026-05-12
-cover: /assets/images/fig_1.png
+cover: /assets/images/fig_3.png
 ---
 
 # 你老板看了个AI Agent的Demo，然后你的噩梦开始了
