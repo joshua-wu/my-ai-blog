@@ -2,8 +2,8 @@
 title: "给AI造灵魂的人，一行代码都不会写"
 date: 2026-05-12
 layout: post
+cover: "/assets/images/ai-soul-fig_1.png"
 ---
-
 OpenAI雇了一个哲学博士。
 
 不是去研究大模型架构，不是去优化训练效率——而是去决定一件事：ChatGPT该不该告诉你怎么做炸弹。

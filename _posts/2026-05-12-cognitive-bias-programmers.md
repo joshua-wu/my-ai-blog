@@ -2,8 +2,8 @@
 title: "别被大脑骗了：程序员的7个思维Bug"
 date: 2026-05-12
 layout: post
+cover: "/assets/images/cognitive-bias-fig_1.png"
 ---
-
 # 别被大脑骗了：程序员的7个思维Bug
 
 你选了 React 而不是 Vue，原因是"我之前用 React 做过一个项目，体验不错"。

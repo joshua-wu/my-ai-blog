@@ -2,8 +2,8 @@
 layout: post
 title: "发声训练指南：让你的声音更有力量"
 date: 2026-05-09
+cover: "/my-ai-blog/assets/images/01-voice-system.svg"
 ---
-
 # 发声训练指南：让你的声音更有力量
 
 > 一份写给从未想过"怎么发声"的普通人的练习手册

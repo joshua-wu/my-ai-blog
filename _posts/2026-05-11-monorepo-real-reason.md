@@ -2,8 +2,8 @@
 title: "分仓的痛，只有全栈开发者懂"
 date: 2026-05-11
 layout: post
+cover: "/assets/images/fig_1.png"
 ---
-
 # 分仓的痛，只有全栈开发者懂
 
 掘金上最近有个话题特别火——"NestJS + Monorepo 越来越流行了"。评论区清一色的"真香"，点赞数蹭蹭往上涨。

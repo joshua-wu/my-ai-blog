@@ -1,8 +1,8 @@
 ---
 title: "千万级大表加索引不锁表？你可能踩了Online DDL的两个坑"
 date: 2026-05-12
+cover: "/assets/images/big-table-index-fig_1_highway.png"
 ---
-
 美团二面，面试官问："千万级大表建索引要注意什么？"
 
 你回答了 B+Tree 结构、回表代价、最左前缀……面试官点点头，追了一句："你在生产环境做过吗？"

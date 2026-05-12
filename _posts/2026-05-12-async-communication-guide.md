@@ -2,8 +2,8 @@
 title: "一条\"在吗\"毁掉你整个下午"
 date: 2026-05-12
 layout: post
+cover: "/assets/images/async-comm-fig_1.png"
 ---
-
 你正在写一个复杂的函数。逻辑刚理顺，变量命名刚想好，手指悬在键盘上准备一气呵成——
 
 飞书弹了一条消息："在吗？"

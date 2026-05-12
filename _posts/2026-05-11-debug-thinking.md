@@ -2,8 +2,8 @@
 title: "为什么你debug总比别人慢？"
 date: 2026-05-11
 layout: post
+cover: "/assets/images/fig_1.png"
 ---
-
 # 为什么你debug总比别人慢？
 
 你遇到一个bug，第一反应是什么？

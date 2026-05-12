@@ -2,8 +2,8 @@
 title: "Bun快3倍？这话只对了一半"
 date: 2026-05-11
 layout: post
+cover: "/assets/images/fig_1.png"
 ---
-
 # Bun快3倍？这话只对了一半
 
 前几天刷掘金，看到一篇帖子问"Bun能上生产吗"，底下评论区直接炸了——有人说"快到起飞，回不去Node了"，有人说"用了一周，bug多到想砸电脑"。
