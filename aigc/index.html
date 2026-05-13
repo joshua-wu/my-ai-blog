@@ -1,0 +1,556 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AIGC HTML 入口</title>
+    <style>
+      :root {
+        color-scheme: light;
+        --bg: #f6f1ea;
+        --ink: #241f1b;
+        --muted: #746b61;
+        --panel: #fffaf3;
+        --panel-strong: #ffffff;
+        --line: #e6d8c7;
+        --accent: #d84f3f;
+        --accent-dark: #a9362a;
+        --green: #2f7d62;
+        --blue: #3569a8;
+        --shadow: 0 16px 36px rgba(56, 38, 22, 0.1);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        color: var(--ink);
+        background:
+          linear-gradient(135deg, rgba(216, 79, 63, 0.08), transparent 36%),
+          linear-gradient(315deg, rgba(47, 125, 98, 0.08), transparent 34%),
+          var(--bg);
+        font-family:
+          -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC",
+          "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      .page {
+        width: min(1120px, calc(100% - 32px));
+        margin: 0 auto;
+        padding: 48px 0 56px;
+      }
+
+      header {
+        display: grid;
+        gap: 16px;
+        padding: 32px;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: rgba(255, 250, 243, 0.88);
+        box-shadow: var(--shadow);
+      }
+
+      .eyebrow {
+        width: fit-content;
+        padding: 6px 10px;
+        border: 1px solid rgba(216, 79, 63, 0.24);
+        border-radius: 999px;
+        color: var(--accent-dark);
+        background: rgba(216, 79, 63, 0.08);
+        font-size: 13px;
+        font-weight: 700;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: clamp(34px, 6vw, 68px);
+        line-height: 1.02;
+        letter-spacing: 0;
+      }
+
+      .intro {
+        max-width: 720px;
+        margin: 0;
+        color: var(--muted);
+        font-size: 17px;
+        line-height: 1.7;
+      }
+
+      .stats {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 6px;
+      }
+
+      .stat {
+        padding: 10px 12px;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: var(--panel-strong);
+        color: var(--muted);
+        font-size: 14px;
+      }
+
+      .stat strong {
+        color: var(--ink);
+      }
+
+      main {
+        display: grid;
+        gap: 28px;
+        margin-top: 28px;
+      }
+
+      .section {
+        display: grid;
+        gap: 14px;
+      }
+
+      .section-head {
+        display: flex;
+        align-items: end;
+        justify-content: space-between;
+        gap: 16px;
+        padding: 0 4px;
+      }
+
+      h2 {
+        margin: 0;
+        font-size: 24px;
+        line-height: 1.2;
+        letter-spacing: 0;
+      }
+
+      .count {
+        color: var(--muted);
+        font-size: 14px;
+        white-space: nowrap;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 14px;
+      }
+
+      .card {
+        display: grid;
+        gap: 16px;
+        min-height: 188px;
+        padding: 18px;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: var(--panel-strong);
+        box-shadow: 0 10px 24px rgba(56, 38, 22, 0.06);
+      }
+
+      .card:hover {
+        border-color: rgba(216, 79, 63, 0.38);
+        transform: translateY(-2px);
+        transition:
+          transform 160ms ease,
+          border-color 160ms ease;
+      }
+
+      .tag {
+        width: fit-content;
+        padding: 5px 9px;
+        border-radius: 999px;
+        background: rgba(36, 31, 27, 0.06);
+        color: var(--muted);
+        font-size: 12px;
+        font-weight: 700;
+      }
+
+      .tag.poker {
+        color: var(--accent-dark);
+        background: rgba(216, 79, 63, 0.1);
+      }
+
+      .tag.tennis {
+        color: var(--green);
+        background: rgba(47, 125, 98, 0.1);
+      }
+
+      .tag.shushi {
+        color: #6f5a12;
+        background: rgba(215, 244, 108, 0.24);
+      }
+
+      .tag.sunscreen {
+        color: var(--blue);
+        background: rgba(53, 105, 168, 0.1);
+      }
+
+      .title {
+        margin: 0;
+        font-size: 18px;
+        line-height: 1.45;
+        font-weight: 800;
+      }
+
+      .thumb {
+        width: 100%;
+        aspect-ratio: 16 / 10;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background:
+          linear-gradient(135deg, rgba(36, 31, 27, 0.04), rgba(216, 79, 63, 0.08)),
+          #f3eadf;
+        object-fit: cover;
+        display: block;
+      }
+
+      .file {
+        margin: 0;
+        color: var(--muted);
+        font-family:
+          ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+          "Liberation Mono", monospace;
+        font-size: 12px;
+        line-height: 1.5;
+        overflow-wrap: anywhere;
+      }
+
+      .open {
+        align-self: end;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 40px;
+        padding: 0 14px;
+        border-radius: 8px;
+        background: var(--ink);
+        color: #fff;
+        font-size: 14px;
+        font-weight: 800;
+      }
+
+      .open:hover {
+        background: var(--accent);
+      }
+
+      @media (max-width: 860px) {
+        .grid {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+      }
+
+      @media (max-width: 600px) {
+        .page {
+          width: min(100% - 22px, 430px);
+          padding: 18px 0 32px;
+        }
+
+        header {
+          padding: 22px;
+        }
+
+        .grid {
+          grid-template-columns: 1fr;
+        }
+
+        .section-head {
+          align-items: start;
+          flex-direction: column;
+          gap: 6px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <header>
+        <div class="eyebrow">HTML Navigation</div>
+        <h1>AIGC 页面入口</h1>
+        <p class="intro">
+          当前项目下所有独立 HTML 的统一访问页。点击卡片即可打开对应文章或来源索引。
+        </p>
+        <div class="stats" aria-label="页面统计">
+          <div class="stat"><strong>25</strong> 个页面</div>
+          <div class="stat"><strong>5</strong> 个分组</div>
+          <div class="stat">根目录静态入口</div>
+        </div>
+      </header>
+
+      <main>
+        <section class="section" aria-labelledby="poker-title">
+          <div class="section-head">
+            <h2 id="poker-title">德州扑克</h2>
+            <div class="count">6 个页面</div>
+          </div>
+          <div class="grid">
+            <a class="card" href="aigc-poker-guide-01-beginner-home-set.html">
+              <span class="tag poker">Poker 01</span>
+              <p class="title">德州扑克新手别乱买，家里先配这5件真商品</p>
+              <p class="file">aigc-poker-guide-01-beginner-home-set.html</p>
+              <span class="open">打开页面</span>
+            </a>
+            <a class="card" href="aigc-poker-guide-02-low-cost-practice.html">
+              <span class="tag poker">Poker 02</span>
+              <p class="title">新手练规则别上大件，这5件低压力更聪明</p>
+              <p class="file">aigc-poker-guide-02-low-cost-practice.html</p>
+              <span class="open">打开页面</span>
+            </a>
+            <a class="card" href="aigc-poker-guide-03-chip-upgrade.html">
+              <span class="tag poker">Poker 03</span>
+              <p class="title">筹码手感差太扫兴，升级前先看这5件</p>
+              <p class="file">aigc-poker-guide-03-chip-upgrade.html</p>
+              <span class="open">打开页面</span>
+            </a>
+            <a class="card" href="aigc-poker-guide-04-pro-table-details.html">
+              <span class="tag poker">Poker 04</span>
+              <p class="title">想让牌桌更专业？这5个真实配件很有存在感</p>
+              <p class="file">aigc-poker-guide-04-pro-table-details.html</p>
+              <span class="open">打开页面</span>
+            </a>
+            <a class="card" href="aigc-poker-guide-05-home-game-night.html">
+              <span class="tag poker">Poker 05</span>
+              <p class="title">朋友来家里玩德扑，5件真商品让桌游夜更顺</p>
+              <p class="file">aigc-poker-guide-05-home-game-night.html</p>
+              <span class="open">打开页面</span>
+            </a>
+            <a class="card" href="aigc-poker-real-products-index.html">
+              <span class="tag poker">Sources</span>
+              <p class="title">德州扑克真实商品来源索引</p>
+              <p class="file">aigc-poker-real-products-index.html</p>
+              <span class="open">打开页面</span>
+            </a>
+          </div>
+        </section>
+
+        <section class="section" aria-labelledby="shushi-tennis-title">
+          <div class="section-head">
+            <h2 id="shushi-tennis-title">叔式网球旅行</h2>
+            <div class="count">6 个页面</div>
+          </div>
+          <div class="grid">
+            <a class="card" href="aigc-shushi-tennis-5-articles.html">
+              <span class="tag shushi">Index</span>
+              <p class="title">叔式生活风格网球旅行文章合集</p>
+              <p class="file">aigc-shushi-tennis-5-articles.html</p>
+              <span class="open">打开页面</span>
+            </a>
+            <a class="card" href="aigc-shushi-tennis-article-01-weekend-pack.html">
+              <span class="tag shushi">Travel 01</span>
+              <p class="title">周末去外地打球，包里这5件我会先放进去</p>
+              <p class="file">aigc-shushi-tennis-article-01-weekend-pack.html</p>
+              <span class="open">打开页面</span>
+            </a>
+            <a class="card" href="aigc-shushi-tennis-article-02-hot-city.html">
+              <span class="tag shushi">Travel 02</span>
+              <p class="title">去南方城市打球，别只看球场好不好看</p>
+              <p class="file">aigc-shushi-tennis-article-02-hot-city.html</p>
+              <span class="open">打开页面</span>
+            </a>
+            <a class="card" href="aigc-shushi-tennis-article-03-tennis-academy.html">
+              <span class="tag shushi">Travel 03</span>
+              <p class="title">想去网球学院上课，先别急着冲动下单</p>
+              <p class="file">aigc-shushi-tennis-article-03-tennis-academy.html</p>
+              <span class="open">打开页面</span>
+            </a>
+            <a class="card" href="aigc-shushi-tennis-article-04-group-trip.html">
+              <span class="tag shushi">Travel 04</span>
+              <p class="title">带球友组一次网旅，到底要准备什么？</p>
+              <p class="file">aigc-shushi-tennis-article-04-group-trip.html</p>
+              <span class="open">打开页面</span>
+            </a>
+            <a class="card" href="aigc-shushi-tennis-article-05-new-court.html">
+              <span class="tag shushi">Travel 05</span>
+              <p class="title">家附近新球场+1，第一次去我会带这5样</p>
+              <p class="file">aigc-shushi-tennis-article-05-new-court.html</p>
+              <span class="open">打开页面</span>
+            </a>
+          </div>
+        </section>
+
+        <section class="section" aria-labelledby="tennis-title">
+          <div class="section-head">
+            <h2 id="tennis-title">网球</h2>
+            <div class="count">5 个页面</div>
+          </div>
+          <div class="grid">
+            <a class="card" href="aigc-tennis-guide-01-first-court.html">
+              <span class="tag tennis">Tennis 01</span>
+              <p class="title">第一次上网球场别乱买，5件够你从0开打</p>
+              <p class="file">aigc-tennis-guide-01-first-court.html</p>
+              <span class="open">打开页面</span>
+            </a>
+            <a class="card" href="aigc-tennis-guide-02-no-pain.html">
+              <span class="tag tennis">Tennis 02</span>
+              <p class="title">网球新手别硬扛手腕肘，先把这5个细节补上</p>
+              <p class="file">aigc-tennis-guide-02-no-pain.html</p>
+              <span class="open">打开页面</span>
+            </a>
+            <a class="card" href="aigc-tennis-guide-03-after-work.html">
+              <span class="tag tennis">Tennis 03</span>
+              <p class="title">下班1小时练网球，包里只放这5样就够</p>
+              <p class="file">aigc-tennis-guide-03-after-work.html</p>
+              <span class="open">打开页面</span>
+            </a>
+            <a class="card" href="aigc-tennis-guide-04-self-practice.html">
+              <span class="tag tennis">Tennis 04</span>
+              <p class="title">没人陪练也能进步：网球新手自练5件套</p>
+              <p class="file">aigc-tennis-guide-04-self-practice.html</p>
+              <span class="open">打开页面</span>
+            </a>
+            <a class="card" href="aigc-tennis-guide-05-summer-court.html">
+              <span class="tag tennis">Tennis 05</span>
+              <p class="title">夏天打网球不崩溃，新手先带这5件</p>
+              <p class="file">aigc-tennis-guide-05-summer-court.html</p>
+              <span class="open">打开页面</span>
+            </a>
+          </div>
+        </section>
+
+        <section class="section" aria-labelledby="sunscreen-title">
+          <div class="section-head">
+            <h2 id="sunscreen-title">夏天防晒</h2>
+            <div class="count">7 个页面</div>
+          </div>
+          <div class="grid">
+            <a class="card" href="aigc-summer-sunscreen-5-articles.html">
+              <span class="tag sunscreen">Index</span>
+              <p class="title">夏天女生防晒专家 - 5篇独立文章入口</p>
+              <p class="file">aigc-summer-sunscreen-5-articles.html</p>
+              <span class="open">打开页面</span>
+            </a>
+            <a class="card" href="aigc-sunscreen-article-01-commute.html">
+              <span class="tag sunscreen">Sunscreen 01</span>
+              <p class="title">通勤防晒包：地铁口到公司这20分钟</p>
+              <p class="file">aigc-sunscreen-article-01-commute.html</p>
+              <span class="open">打开页面</span>
+            </a>
+            <a class="card" href="aigc-sunscreen-article-02-outdoor.html">
+              <span class="tag sunscreen">Sunscreen 02</span>
+              <p class="title">户外防晒：别只靠一支防晒霜硬扛</p>
+              <p class="file">aigc-sunscreen-article-02-outdoor.html</p>
+              <span class="open">打开页面</span>
+            </a>
+            <a class="card" href="aigc-sunscreen-article-03-beach.html">
+              <span class="tag sunscreen">Sunscreen 03</span>
+              <p class="title">海边旅行防晒：拍照好看也别裸晒</p>
+              <p class="file">aigc-sunscreen-article-03-beach.html</p>
+              <span class="open">打开页面</span>
+            </a>
+            <a class="card" href="aigc-sunscreen-article-04-sensitive-skin.html">
+              <span class="tag sunscreen">Sunscreen 04</span>
+              <p class="title">敏感肌夏天防晒：脸上少加压</p>
+              <p class="file">aigc-sunscreen-article-04-sensitive-skin.html</p>
+              <span class="open">打开页面</span>
+            </a>
+            <a class="card" href="aigc-sunscreen-article-05-driving-cycling.html">
+              <span class="tag sunscreen">Sunscreen 05</span>
+              <p class="title">开车骑行防晒：左脸和手臂色差预警</p>
+              <p class="file">aigc-sunscreen-article-05-driving-cycling.html</p>
+              <span class="open">打开页面</span>
+            </a>
+            <a class="card" href="aigc-sunscreen-sources.html">
+              <span class="tag sunscreen">Sources</span>
+              <p class="title">防晒文章商品图来源</p>
+              <p class="file">aigc-sunscreen-sources.html</p>
+              <span class="open">打开页面</span>
+            </a>
+          </div>
+        </section>
+
+        <section class="section" aria-labelledby="other-title">
+          <div class="section-head">
+            <h2 id="other-title">其他</h2>
+            <div class="count">1 个页面</div>
+          </div>
+          <div class="grid">
+            <a class="card" href="aigc-xiaohongshu-guide.html">
+              <span class="tag">Guide</span>
+              <p class="title">1岁宝宝夏天外出不崩溃的5件护理小物</p>
+              <p class="file">aigc-xiaohongshu-guide.html</p>
+              <span class="open">打开页面</span>
+            </a>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script>
+      const previewImages = {
+        "aigc-poker-guide-01-beginner-home-set.html":
+          "https://cdn.shopify.com/s/files/1/0094/3485/7527/products/597-3-bridge-red-blue-jumbo_800x.jpg?v=1652811586",
+        "aigc-poker-guide-02-low-cost-practice.html":
+          "https://cdn.shopify.com/s/files/1/0873/7852/6502/files/WeChatImage_201804171100214.jpg?v=1714414789",
+        "aigc-poker-guide-03-chip-upgrade.html":
+          "https://cdn.shopify.com/s/files/1/0838/8719/4430/files/CPSP_25_Black-01.jpg?v=1705578602",
+        "aigc-poker-guide-04-pro-table-details.html":
+          "https://cdn.shopify.com/s/files/1/0873/7852/6502/files/bigslickgold.jpg?v=1714415533",
+        "aigc-poker-guide-05-home-game-night.html":
+          "https://cdn.shopify.com/s/files/1/0838/8719/4430/files/GPAD-202_alt-01.jpg?v=1705580837",
+        "aigc-poker-real-products-index.html":
+          "https://cdn.shopify.com/s/files/1/0094/3485/7527/products/597-3-bridge-red-blue-jumbo_800x.jpg?v=1652811586",
+        "aigc-shushi-tennis-5-articles.html":
+          "assets/aigc-shushi-tennis/sunlit-rackets.jpg",
+        "aigc-shushi-tennis-article-01-weekend-pack.html":
+          "assets/aigc-shushi-tennis/tennis-bag.jpg",
+        "aigc-shushi-tennis-article-02-hot-city.html":
+          "assets/aigc-shushi-tennis/water-bottle.jpg",
+        "aigc-shushi-tennis-article-03-tennis-academy.html":
+          "assets/aigc-shushi-tennis/racket-court.jpg",
+        "aigc-shushi-tennis-article-04-group-trip.html":
+          "assets/aigc-shushi-tennis/balls-racket.jpg",
+        "aigc-shushi-tennis-article-05-new-court.html":
+          "assets/aigc-shushi-tennis/tennis-shoes.jpg",
+        "aigc-summer-sunscreen-5-articles.html":
+          "assets/aigc-sunscreen/supergoop-unseen-sunscreen.png",
+        "aigc-sunscreen-article-01-commute.html":
+          "assets/aigc-sunscreen/supergoop-unseen-sunscreen.png",
+        "aigc-sunscreen-article-02-outdoor.html":
+          "assets/aigc-sunscreen/coolibar-sun-hoodie.jpg",
+        "aigc-sunscreen-article-03-beach.html":
+          "assets/aigc-sunscreen/decathlon-upf-hat.jpg",
+        "aigc-sunscreen-article-04-sensitive-skin.html":
+          "assets/aigc-sunscreen/supergoop-unseen-sunscreen.png",
+        "aigc-sunscreen-article-05-driving-cycling.html":
+          "assets/aigc-sunscreen/coolibar-face-mask.jpg",
+        "aigc-sunscreen-sources.html":
+          "assets/aigc-sunscreen/supergoop-unseen-sunscreen.png",
+        "aigc-xiaohongshu-guide.html":
+          "https://img.alicdn.com/bao/uploaded/i2/4037193669/O1CN01zm2owO1cySIECpkCz_!!4611686018427383749-0-item_pic.jpg_500x500q90"
+      };
+
+      const tennisPreview = (label) => {
+        const svg = `
+          <svg xmlns="http://www.w3.org/2000/svg" width="960" height="600" viewBox="0 0 960 600">
+            <rect width="960" height="600" fill="#fbfaf2"/>
+            <rect x="56" y="56" width="848" height="488" rx="26" fill="#d7f46c" opacity=".28"/>
+            <circle cx="690" cy="182" r="86" fill="#d7f46c" stroke="#263122" stroke-width="13"/>
+            <path d="M276 122c132 46 245 162 330 346" fill="none" stroke="#2f7d62" stroke-width="34" stroke-linecap="round"/>
+            <path d="M236 184c100 50 190 140 272 270" fill="none" stroke="#263122" stroke-width="13" stroke-linecap="round" opacity=".72"/>
+            <rect x="306" y="408" width="282" height="58" rx="29" fill="#263122" transform="rotate(45 447 437)"/>
+            <text x="84" y="462" font-family="Arial, PingFang SC, sans-serif" font-size="64" font-weight="900" fill="#263122">${label}</text>
+            <text x="88" y="516" font-family="Arial, PingFang SC, sans-serif" font-size="30" font-weight="800" fill="#5f6656">TENNIS GUIDE</text>
+          </svg>`;
+        return `data:image/svg+xml;charset=utf-8,${encodeURIComponent(svg)}`;
+      };
+
+      document.querySelectorAll(".card").forEach((card) => {
+        const href = card.getAttribute("href");
+        const title = card.querySelector(".title");
+        if (!href || !title || card.querySelector(".thumb")) return;
+
+        const img = document.createElement("img");
+        img.className = "thumb";
+        img.loading = "lazy";
+        img.referrerPolicy = "no-referrer";
+        img.alt = `${title.textContent.trim()} 预览图`;
+        img.src = previewImages[href] || tennisPreview(title.textContent.trim().slice(0, 10));
+        title.insertAdjacentElement("afterend", img);
+      });
+    </script>
+  </body>
+</html>
