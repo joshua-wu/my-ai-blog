@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" font-family="sans-serif">
+  <defs>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="1" dy="1" stdDeviation="2" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <!-- Title -->
+  <text x="300" y="35" text-anchor="middle" font-size="18" font-weight="bold" fill="#333">四驱动力模型 Four-Drive Model</text>
+
+  <!-- Central circle -->
+  <circle cx="300" cy="210" r="45" fill="#F5F5F5" stroke="#999" stroke-width="1.5"/>
+  <text x="300" y="205" text-anchor="middle" font-size="13" font-weight="bold" fill="#555">人的</text>
+  <text x="300" y="222" text-anchor="middle" font-size="13" font-weight="bold" fill="#555">行为</text>
+
+  <!-- Gain - Top Left -->
+  <rect x="60" y="65" width="170" height="110" rx="12" fill="#4A90D9" filter="url(#shadow)" opacity="0.92"/>
+  <text x="145" y="95" text-anchor="middle" font-size="16" font-weight="bold" fill="#fff">利益驱动</text>
+  <text x="145" y="113" text-anchor="middle" font-size="11" fill="#E8F0FE">Gain</text>
+  <text x="145" y="135" text-anchor="middle" font-size="11" fill="#fff">获取资源、地位、报酬</text>
+  <text x="145" y="153" text-anchor="middle" font-size="10" fill="#C5DCFA">功劳归属 · 声誉资产 · 晋升</text>
+  <line x1="230" y1="130" x2="258" y2="185" stroke="#4A90D9" stroke-width="2" marker-end="url(#arrowBlue)"/>
+
+  <!-- Security - Top Right -->
+  <rect x="370" y="65" width="170" height="110" rx="12" fill="#E74C3C" filter="url(#shadow)" opacity="0.92"/>
+  <text x="455" y="95" text-anchor="middle" font-size="16" font-weight="bold" fill="#fff">安全驱动</text>
+  <text x="455" y="113" text-anchor="middle" font-size="11" fill="#FADBD8">Security</text>
+  <text x="455" y="135" text-anchor="middle" font-size="11" fill="#fff">规避风险、减少不确定性</text>
+  <text x="455" y="153" text-anchor="middle" font-size="10" fill="#F5C6C1">推诿 · 信息囤积 · 过度汇报</text>
+  <line x1="370" y1="130" x2="342" y2="185" stroke="#E74C3C" stroke-width="2"/>
+
+  <!-- Belonging - Bottom Left -->
+  <rect x="60" y="240" width="170" height="110" rx="12" fill="#4CAF50" filter="url(#shadow)" opacity="0.92"/>
+  <text x="145" y="270" text-anchor="middle" font-size="16" font-weight="bold" fill="#fff">归属驱动</text>
+  <text x="145" y="288" text-anchor="middle" font-size="11" fill="#E8F5E9">Belonging</text>
+  <text x="145" y="310" text-anchor="middle" font-size="11" fill="#fff">被群体接纳、获得认同</text>
+  <text x="145" y="328" text-anchor="middle" font-size="10" fill="#C8E6C9">站队 · 小圈子 · 社交信号</text>
+  <line x1="230" y1="285" x2="258" y2="235" stroke="#4CAF50" stroke-width="2"/>
+
+  <!-- Control - Bottom Right -->
+  <rect x="370" y="240" width="170" height="110" rx="12" fill="#E8913A" filter="url(#shadow)" opacity="0.92"/>
+  <text x="455" y="270" text-anchor="middle" font-size="16" font-weight="bold" fill="#fff">控制驱动</text>
+  <text x="455" y="288" text-anchor="middle" font-size="11" fill="#FFF3E0">Control</text>
+  <text x="455" y="310" text-anchor="middle" font-size="11" fill="#fff">对工作和命运的掌控感</text>
+  <text x="455" y="328" text-anchor="middle" font-size="10" fill="#FFE0B2">抗拒微管理 · 自主决策</text>
+  <line x1="370" y1="285" x2="342" y2="235" stroke="#E8913A" stroke-width="2"/>
+
+  <!-- Footer -->
+  <text x="300" y="385" text-anchor="middle" font-size="11" fill="#999">困惑时依次检验：保护什么利益？规避什么风险？争取谁的认同？控制什么？</text>
+</svg>

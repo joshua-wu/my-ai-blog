@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" font-family="sans-serif">
+  <defs>
+    <linearGradient id="pillar1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#4A90D9"/>
+      <stop offset="100%" stop-color="#3670B0"/>
+    </linearGradient>
+    <linearGradient id="pillar2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#5B6ABF"/>
+      <stop offset="100%" stop-color="#4A5AA0"/>
+    </linearGradient>
+    <linearGradient id="pillar3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#4CAF50"/>
+      <stop offset="100%" stop-color="#388E3C"/>
+    </linearGradient>
+    <filter id="pillarshadow" x="-5%" y="-2%" width="110%" height="105%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+
+  <!-- Title -->
+  <text x="300" y="32" text-anchor="middle" font-size="18" font-weight="bold" fill="#333">声誉三支柱</text>
+
+  <!-- Roof / Entablature -->
+  <polygon points="50,70 300,40 550,70 550,85 50,85" fill="#4A5568" stroke="#2D3748" stroke-width="1"/>
+  <text x="300" y="65" text-anchor="middle" font-size="13" font-weight="bold" fill="#fff">声誉资本</text>
+  <text x="300" y="80" text-anchor="middle" font-size="9" fill="#CBD5E0">被善意解读的权利</text>
+
+  <!-- Pillar 1 -->
+  <rect x="85" y="90" width="110" height="210" rx="4" fill="url(#pillar1)" filter="url(#pillarshadow)"/>
+  <text x="140" y="140" text-anchor="middle" font-size="13" font-weight="bold" fill="#fff">专业</text>
+  <text x="140" y="158" text-anchor="middle" font-size="13" font-weight="bold" fill="#fff">可靠性</text>
+  <text x="140" y="185" text-anchor="middle" font-size="10" fill="#C5DCFA">说到做到</text>
+  <text x="140" y="200" text-anchor="middle" font-size="10" fill="#C5DCFA">交付质量稳定</text>
+  <text x="140" y="230" text-anchor="middle" font-size="9" fill="#A0C4E8">━━━━━━</text>
+  <text x="140" y="250" text-anchor="middle" font-size="10" fill="#E8F0FE" font-weight="bold">地基</text>
+  <text x="140" y="270" text-anchor="middle" font-size="9" fill="#C5DCFA">没有这条</text>
+  <text x="140" y="285" text-anchor="middle" font-size="9" fill="#C5DCFA">其他都是空中楼阁</text>
+
+  <!-- Pillar 2 -->
+  <rect x="245" y="90" width="110" height="210" rx="4" fill="url(#pillar2)" filter="url(#pillarshadow)"/>
+  <text x="300" y="140" text-anchor="middle" font-size="13" font-weight="bold" fill="#fff">为人</text>
+  <text x="300" y="158" text-anchor="middle" font-size="13" font-weight="bold" fill="#fff">公正性</text>
+  <text x="300" y="185" text-anchor="middle" font-size="10" fill="#D0D5F0">利益分配公平</text>
+  <text x="300" y="200" text-anchor="middle" font-size="10" fill="#D0D5F0">功劳正确归因</text>
+  <text x="300" y="230" text-anchor="middle" font-size="9" fill="#B0B8E0">━━━━━━</text>
+  <text x="300" y="250" text-anchor="middle" font-size="10" fill="#E8ECF8" font-weight="bold">信任基础</text>
+  <text x="300" y="270" text-anchor="middle" font-size="9" fill="#D0D5F0">主动分功 →</text>
+  <text x="300" y="285" text-anchor="middle" font-size="9" fill="#D0D5F0">团队忠诚 + 领导力认可</text>
+
+  <!-- Pillar 3 -->
+  <rect x="405" y="90" width="110" height="210" rx="4" fill="url(#pillar3)" filter="url(#pillarshadow)"/>
+  <text x="460" y="140" text-anchor="middle" font-size="13" font-weight="bold" fill="#fff">行为</text>
+  <text x="460" y="158" text-anchor="middle" font-size="13" font-weight="bold" fill="#fff">可预测性</text>
+  <text x="460" y="185" text-anchor="middle" font-size="10" fill="#C8E6C9">别人知道你会怎么做</text>
+  <text x="460" y="200" text-anchor="middle" font-size="10" fill="#C8E6C9">减少不确定性</text>
+  <text x="460" y="230" text-anchor="middle" font-size="9" fill="#A5D6A7">━━━━━━</text>
+  <text x="460" y="250" text-anchor="middle" font-size="10" fill="#E8F5E9" font-weight="bold">信任加速器</text>
+  <text x="460" y="270" text-anchor="middle" font-size="9" fill="#C8E6C9">严厉但公平可预测 &gt;</text>
+  <text x="460" y="285" text-anchor="middle" font-size="9" fill="#C8E6C9">忽好忽差无法预测</text>
+
+  <!-- Base / Foundation -->
+  <rect x="50" y="305" width="500" height="40" rx="4" fill="#2D3748"/>
+  <text x="300" y="330" text-anchor="middle" font-size="12" font-weight="bold" fill="#fff">持续创造价值的能力</text>
+
+  <!-- Bottom annotation -->
+  <rect x="100" y="360" width="400" height="30" rx="6" fill="#FFF9E6" stroke="#E8913A" stroke-width="1"/>
+  <text x="300" y="380" text-anchor="middle" font-size="11" fill="#C67A2E">关键时刻的价值：同样的模糊行为，声誉好 → "可能有苦衷"，声誉差 → "果然如此"</text>
+</svg>

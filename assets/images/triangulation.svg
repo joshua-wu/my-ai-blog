@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" font-family="sans-serif">
+  <defs>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Title -->
+  <text x="300" y="32" text-anchor="middle" font-size="18" font-weight="bold" fill="#333">三角验证法 Triangulation Method</text>
+
+  <!-- Triangle edges -->
+  <polygon points="300,70 100,340 500,340" fill="none" stroke="#DDD" stroke-width="2"/>
+
+  <!-- Fill triangle with light color -->
+  <polygon points="300,70 100,340 500,340" fill="#F0F6FF" opacity="0.5"/>
+
+  <!-- Center label -->
+  <circle cx="300" cy="220" r="40" fill="#fff" stroke="#4A90D9" stroke-width="2"/>
+  <text x="300" y="215" text-anchor="middle" font-size="12" font-weight="bold" fill="#333">可靠</text>
+  <text x="300" y="232" text-anchor="middle" font-size="12" font-weight="bold" fill="#333">判断</text>
+
+  <!-- Node 1: 言语信号 (Top) -->
+  <circle cx="300" cy="75" r="50" fill="#4A90D9" filter="url(#glow)"/>
+  <text x="300" y="68" text-anchor="middle" font-size="14" font-weight="bold" fill="#fff">言语信号</text>
+  <text x="300" y="86" text-anchor="middle" font-size="10" fill="#C5DCFA">说了什么 &amp; 没说什么</text>
+
+  <!-- Node 1 details -->
+  <rect x="380" y="55" width="185" height="60" rx="8" fill="#fff" stroke="#4A90D9" stroke-width="1" opacity="0.95"/>
+  <text x="472" y="73" text-anchor="middle" font-size="10" fill="#555">· 用词变化（"我们的"→"你们的"）</text>
+  <text x="472" y="88" text-anchor="middle" font-size="10" fill="#555">· 沉默比发言更有信息量</text>
+  <text x="472" y="103" text-anchor="middle" font-size="10" fill="#555">· 所有权的语言标记转移</text>
+
+  <!-- Node 2: 行为信号 (Bottom Left) -->
+  <circle cx="100" cy="340" r="50" fill="#4CAF50" filter="url(#glow)"/>
+  <text x="100" y="333" text-anchor="middle" font-size="14" font-weight="bold" fill="#fff">行为信号</text>
+  <text x="100" y="351" text-anchor="middle" font-size="10" fill="#C8E6C9">做了什么 &amp; 资源流向</text>
+
+  <!-- Node 2 details -->
+  <rect x="15" y="245" width="175" height="60" rx="8" fill="#fff" stroke="#4CAF50" stroke-width="1" opacity="0.95"/>
+  <text x="102" y="263" text-anchor="middle" font-size="10" fill="#555">· 时间/精力实际投入方向</text>
+  <text x="102" y="278" text-anchor="middle" font-size="10" fill="#555">· 言语可伪装，资源分配难</text>
+  <text x="102" y="293" text-anchor="middle" font-size="10" fill="#555">· 嘴上重要 vs 从不出现</text>
+
+  <!-- Node 3: 结构信号 (Bottom Right) -->
+  <circle cx="500" cy="340" r="50" fill="#E8913A" filter="url(#glow)"/>
+  <text x="500" y="333" text-anchor="middle" font-size="14" font-weight="bold" fill="#fff">结构信号</text>
+  <text x="500" y="351" text-anchor="middle" font-size="10" fill="#FFE0B2">位置 · 压力 · 资源</text>
+
+  <!-- Node 3 details -->
+  <rect x="410" y="245" width="175" height="60" rx="8" fill="#fff" stroke="#E8913A" stroke-width="1" opacity="0.95"/>
+  <text x="497" y="263" text-anchor="middle" font-size="10" fill="#555">· KPI与上级关注点</text>
+  <text x="497" y="278" text-anchor="middle" font-size="10" fill="#555">· 团队近期压力</text>
+  <text x="497" y="293" text-anchor="middle" font-size="10" fill="#555">· 处境不同→含义不同</text>
+
+  <!-- Connecting lines to center -->
+  <line x1="300" y1="125" x2="300" y2="180" stroke="#4A90D9" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <line x1="145" y1="310" x2="263" y2="240" stroke="#4CAF50" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <line x1="455" y1="310" x2="337" y2="240" stroke="#E8913A" stroke-width="1.5" stroke-dasharray="4,3"/>
+
+  <!-- Footer -->
+  <text x="300" y="390" text-anchor="middle" font-size="11" fill="#999">单一信号可能误导，三类信号交叉验证才能得出可靠判断</text>
+</svg>
