@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="760" viewBox="0 0 1280 760" role="img" aria-labelledby="title desc">
+  <title id="title">问题快速分类决策树</title>
+  <desc id="desc">通过目标是否清晰、是否有经验、失败代价大小，将任务分为常规执行、审慎探索、快速试错和问题澄清四类。</desc>
+  <defs>
+    <style>
+      .bg{fill:#f8fafc}.title{font:700 34px Arial,"PingFang SC","Microsoft YaHei",sans-serif;fill:#111827}.node{fill:#fff;stroke:#d7deea;stroke-width:2}.q{font:700 18px Arial,"PingFang SC","Microsoft YaHei",sans-serif;fill:#172033}.txt{font:400 14px Arial,"PingFang SC","Microsoft YaHei",sans-serif;fill:#526071}.type{font:700 20px Arial,"PingFang SC","Microsoft YaHei",sans-serif;fill:#111827}.tag{font:700 13px Arial,"PingFang SC","Microsoft YaHei",sans-serif;fill:#fff}.line{stroke:#94a3b8;stroke-width:3;fill:none;marker-end:url(#arrow)}
+    </style>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L9,3 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect class="bg" width="1280" height="760"/>
+  <text class="title" x="64" y="74">快速分类决策树：拿到问题先判断类型</text>
+
+  <rect class="node" x="480" y="112" width="320" height="86" rx="16"/>
+  <text class="q" x="548" y="150">目标是否清晰？</text>
+  <text class="txt" x="520" y="176">能否一句话说出成功标准</text>
+
+  <path class="line" d="M480 154 H310 V260"/>
+  <path class="line" d="M800 154 H970 V260"/>
+  <rect x="362" y="132" width="42" height="24" rx="12" fill="#0f9f6e"/><text class="tag" x="373" y="149">是</text>
+  <rect x="876" y="132" width="42" height="24" rx="12" fill="#ef4444"/><text class="tag" x="887" y="149">否</text>
+
+  <rect class="node" x="150" y="260" width="320" height="86" rx="16"/>
+  <text class="q" x="218" y="298">做过类似的事吗？</text>
+  <text class="txt" x="200" y="324">是否有可复用经验和清单</text>
+
+  <rect class="node" x="830" y="260" width="320" height="122" rx="16"/>
+  <text class="type" x="914" y="300">类型 D：问题澄清</text>
+  <text class="txt" x="874" y="332">禁止直接进入执行</text>
+  <text class="txt" x="874" y="358">先对齐目标、边界、决策人</text>
+
+  <path class="line" d="M310 346 V430"/>
+  <path class="line" d="M470 303 H640 V430"/>
+  <rect x="318" y="378" width="42" height="24" rx="12" fill="#0f9f6e"/><text class="tag" x="329" y="395">是</text>
+  <rect x="536" y="281" width="42" height="24" rx="12" fill="#f59e0b"/><text class="tag" x="547" y="298">否</text>
+
+  <rect class="node" x="150" y="430" width="320" height="138" rx="16"/>
+  <text class="type" x="230" y="470">类型 A：常规执行</text>
+  <text class="txt" x="202" y="505">直接复用既有经验</text>
+  <text class="txt" x="202" y="531">重点：执行、监控、清单化</text>
+
+  <rect class="node" x="520" y="430" width="320" height="86" rx="16"/>
+  <text class="q" x="606" y="468">失败代价大吗？</text>
+  <text class="txt" x="575" y="494">成本、声誉、周期是否不可逆</text>
+
+  <path class="line" d="M604 516 V616"/>
+  <path class="line" d="M756 516 V616"/>
+  <rect x="610" y="552" width="42" height="24" rx="12" fill="#ef4444"/><text class="tag" x="621" y="569">大</text>
+  <rect x="760" y="552" width="42" height="24" rx="12" fill="#0f9f6e"/><text class="tag" x="771" y="569">小</text>
+
+  <rect class="node" x="430" y="616" width="320" height="112" rx="16"/>
+  <text class="type" x="512" y="656">类型 B：审慎探索</text>
+  <text class="txt" x="482" y="690">完整走六步闭环</text>
+  <text class="txt" x="482" y="716">充分分析后再决策</text>
+
+  <rect class="node" x="800" y="616" width="320" height="112" rx="16"/>
+  <text class="type" x="884" y="656">类型 C：快速试错</text>
+  <text class="txt" x="852" y="690">定义最小验证单元</text>
+  <text class="txt" x="852" y="716">快速执行，即时复盘</text>
+</svg>

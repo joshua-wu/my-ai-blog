@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc">
+  <title id="title">经验萃取四步法</title>
+  <desc id="desc">从事件还原、模式识别、规则提炼到工具固化，将单一事件转化为可复用方法。</desc>
+  <defs><style>.bg{fill:#f8fafc}.title{font:700 34px Arial,"PingFang SC","Microsoft YaHei",sans-serif;fill:#111827}.h{font:700 20px Arial,"PingFang SC","Microsoft YaHei",sans-serif;fill:#172033}.txt{font:400 14px Arial,"PingFang SC","Microsoft YaHei",sans-serif;fill:#526071}.small{font:400 13px Arial,"PingFang SC","Microsoft YaHei",sans-serif;fill:#64748b}.card{fill:#fff;stroke:#d7deea;stroke-width:2}.arrow{stroke:#94a3b8;stroke-width:4;fill:none;marker-end:url(#arrow)}</style><marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="4" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,8 L11,4 z" fill="#94a3b8"/></marker></defs>
+  <rect class="bg" width="1280" height="720"/>
+  <text class="title" x="70" y="74">经验萃取：从事件到方法论</text>
+  <g transform="translate(90 180)">
+    <rect class="card" x="0" y="0" width="250" height="230" rx="18"/><circle cx="42" cy="44" r="24" fill="#2563eb"/><text x="34" y="53" font-family="Arial" font-size="24" font-weight="700" fill="#fff">1</text><text class="h" x="82" y="50">事件还原</text><text class="txt" x="36" y="105">不带评判地还原全过程</text><text class="small" x="36" y="150">输出：具体的单一事件</text><text class="small" x="36" y="178">问题：“发生了什么？”</text>
+    <path class="arrow" d="M270 115 H340"/>
+    <rect class="card" x="360" y="0" width="250" height="230" rx="18"/><circle cx="402" cy="44" r="24" fill="#0f9f6e"/><text x="394" y="53" font-family="Arial" font-size="24" font-weight="700" fill="#fff">2</text><text class="h" x="442" y="50">模式识别</text><text class="txt" x="396" y="105">比较多个同类事件</text><text class="small" x="396" y="150">输出：跨事件共性</text><text class="small" x="396" y="178">问题：“这不是第一次？”</text>
+    <path class="arrow" d="M630 115 H700"/>
+    <rect class="card" x="720" y="0" width="250" height="230" rx="18"/><circle cx="762" cy="44" r="24" fill="#f59e0b"/><text x="754" y="53" font-family="Arial" font-size="24" font-weight="700" fill="#fff">3</text><text class="h" x="802" y="50">规则提炼</text><text class="txt" x="756" y="105">找到因果关系而非相关</text><text class="small" x="756" y="150">输出：抽象因果规则</text><text class="small" x="756" y="178">问题：“背后的规律是？”</text>
+    <path class="arrow" d="M990 115 H1060"/>
+    <rect class="card" x="1080" y="0" width="250" height="230" rx="18"/><circle cx="1122" cy="44" r="24" fill="#7c3aed"/><text x="1114" y="53" font-family="Arial" font-size="24" font-weight="700" fill="#fff">4</text><text class="h" x="1162" y="50">工具固化</text><text class="txt" x="1116" y="105">变成可直接套用的工具</text><text class="small" x="1116" y="150">输出：清单、模板、流程</text><text class="small" x="1116" y="178">问题：“如何复用？”</text>
+  </g>
+  <rect x="308" y="520" width="664" height="62" rx="18" fill="#ecfeff" stroke="#a5f3fc"/>
+  <text class="h" x="420" y="558">目标：把一次项目经验转化为跨场景能力</text>
+</svg>

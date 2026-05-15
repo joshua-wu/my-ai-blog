@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc">
+  <title id="title">偏差发现时间与纠正成本</title>
+  <desc id="desc">越晚发现偏差，纠正成本越高；萌芽期发现成本最低。</desc>
+  <defs><style>.bg{fill:#f8fafc}.title{font:700 34px Arial,"PingFang SC","Microsoft YaHei",sans-serif;fill:#111827}.axis{font:700 16px Arial,"PingFang SC","Microsoft YaHei",sans-serif;fill:#334155}.txt{font:400 15px Arial,"PingFang SC","Microsoft YaHei",sans-serif;fill:#526071}.small{font:400 13px Arial,"PingFang SC","Microsoft YaHei",sans-serif;fill:#64748b}.curve{stroke:#ef4444;stroke-width:7;fill:none}.dash{stroke:#94a3b8;stroke-width:2;stroke-dasharray:8 8}</style></defs>
+  <rect class="bg" width="1280" height="720"/>
+  <text class="title" x="70" y="74">偏差发现越晚，纠正成本越高</text>
+  <g transform="translate(170 130)">
+    <path d="M80 470 V40 M80 470 H980" stroke="#334155" stroke-width="3" fill="none"/>
+    <text class="axis" x="0" y="45">纠正成本</text><text class="axis" x="950" y="510">时间</text>
+    <path class="curve" d="M105 445 C240 390 360 335 480 270 C620 194 760 125 930 60"/>
+    <line class="dash" x1="170" y1="470" x2="170" y2="100"/><line class="dash" x1="890" y1="470" x2="890" y2="80"/>
+    <circle cx="170" cy="418" r="12" fill="#16a34a"/><text class="txt" x="190" y="420">偏差萌芽期发现</text><text class="small" x="190" y="444">纠正成本最低，选择空间最大</text>
+    <circle cx="890" cy="78" r="12" fill="#ef4444"/><text class="txt" x="682" y="98">截止日期才发现</text><text class="small" x="682" y="122">成本高，通常只能加资源、砍范围或延期</text>
+    <text class="axis" x="126" y="500">偏差开始</text><text class="axis" x="852" y="500">截止日期</text>
+  </g>
+</svg>

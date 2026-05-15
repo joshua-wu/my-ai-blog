@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc">
+  <title id="title">信息收集与分析工具组</title>
+  <desc id="desc">展示假设树、MECE 分解、鱼骨图和快速验证如何形成根因分析工具链。</desc>
+  <defs>
+    <style>
+      .bg{fill:#f8fafc}.title{font:700 34px Arial,"PingFang SC","Microsoft YaHei",sans-serif;fill:#111827}.h{font:700 19px Arial,"PingFang SC","Microsoft YaHei",sans-serif;fill:#172033}.txt{font:400 14px Arial,"PingFang SC","Microsoft YaHei",sans-serif;fill:#526071}.box{fill:#fff;stroke:#d7deea;stroke-width:2}.line{stroke:#94a3b8;stroke-width:3;fill:none}.arrow{stroke:#94a3b8;stroke-width:3;fill:none;marker-end:url(#arrow)}
+    </style>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L9,3 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect class="bg" width="1280" height="720"/>
+  <text class="title" x="64" y="72">信息收集与分析：假设驱动的根因工具链</text>
+  <rect class="box" x="70" y="130" width="270" height="460" rx="18"/>
+  <text class="h" x="124" y="176">1. 假设树</text>
+  <circle cx="205" cy="238" r="28" fill="#2563eb"/><text class="txt" x="184" y="244" fill="#fff">问题</text>
+  <path class="line" d="M205 266 V310 M205 310 H134 M205 310 H276"/>
+  <rect x="80" y="330" width="108" height="46" rx="12" fill="#dbeafe"/><text class="txt" x="108" y="358">假设 A</text>
+  <rect x="222" y="330" width="108" height="46" rx="12" fill="#dbeafe"/><text class="txt" x="250" y="358">假设 B</text>
+  <path class="line" d="M134 376 V424 M276 376 V424"/>
+  <rect x="80" y="424" width="108" height="46" rx="12" fill="#eff6ff"/><text class="txt" x="108" y="452">验证点</text>
+  <rect x="222" y="424" width="108" height="46" rx="12" fill="#eff6ff"/><text class="txt" x="250" y="452">验证点</text>
+  <text class="txt" x="104" y="526">把大问题拆成可验证假设</text>
+
+  <path class="arrow" d="M340 360 H430"/>
+  <rect class="box" x="430" y="130" width="270" height="460" rx="18"/>
+  <text class="h" x="498" y="176">2. MECE</text>
+  <rect x="486" y="225" width="158" height="226" rx="16" fill="#fff7ed" stroke="#fed7aa"/>
+  <path d="M486 302 H644 M565 225 V451" stroke="#f59e0b" stroke-width="3"/>
+  <text class="txt" x="512" y="268">互斥</text><text class="txt" x="592" y="268">穷尽</text>
+  <text class="txt" x="512" y="380">无重叠</text><text class="txt" x="592" y="380">无遗漏</text>
+  <text class="txt" x="484" y="526">防止重复分析和关键遗漏</text>
+
+  <path class="arrow" d="M700 360 H790"/>
+  <rect class="box" x="790" y="130" width="420" height="460" rx="18"/>
+  <text class="h" x="918" y="176">3. 鱼骨图 + 快速验证</text>
+  <path d="M890 360 H1130" stroke="#334155" stroke-width="4"/>
+  <path d="M1130 360 L1170 330 M1130 360 L1170 390" stroke="#334155" stroke-width="4"/>
+  <path d="M930 360 L870 280 M990 360 L930 280 M1050 360 L990 280" stroke="#94a3b8" stroke-width="3"/>
+  <path d="M930 360 L870 440 M990 360 L930 440 M1050 360 L990 440" stroke="#94a3b8" stroke-width="3"/>
+  <text class="txt" x="842" y="266">人</text><text class="txt" x="914" y="266">流程</text><text class="txt" x="974" y="266">系统</text>
+  <text class="txt" x="842" y="466">数据</text><text class="txt" x="914" y="466">环境</text><text class="txt" x="974" y="466">策略</text>
+  <rect x="1026" y="500" width="132" height="44" rx="12" fill="#dcfce7"/><text class="txt" x="1054" y="528">证据通过</text>
+  <text class="txt" x="856" y="526">用最低成本验证根因假设</text>
+</svg>

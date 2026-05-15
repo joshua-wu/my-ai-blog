@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc">
+  <title id="title">案例风险矩阵</title>
+  <desc id="desc">案例中模板覆盖、Q4涨价客户、CSM人力、模板UI和技术资源风险在概率影响矩阵中的分布。</desc>
+  <defs><style>.bg{fill:#f8fafc}.title{font:700 34px Arial,"PingFang SC","Microsoft YaHei",sans-serif;fill:#111827}.axis{font:700 17px Arial,"PingFang SC","Microsoft YaHei",sans-serif;fill:#334155}.h{font:700 18px Arial,"PingFang SC","Microsoft YaHei",sans-serif;fill:#172033}.txt{font:400 13px Arial,"PingFang SC","Microsoft YaHei",sans-serif;fill:#526071}.risk{font:700 16px Arial,"PingFang SC","Microsoft YaHei",sans-serif;fill:#111827}</style></defs>
+  <rect class="bg" width="1280" height="720"/>
+  <text class="title" x="70" y="74">案例风险矩阵：方案 B + 方案 A 组合</text>
+  <text class="axis" x="560" y="132">影响程度</text><text class="axis" x="340" y="174">低影响</text><text class="axis" x="590" y="174">中影响</text><text class="axis" x="840" y="174">高影响</text>
+  <text class="axis" x="150" y="360" transform="rotate(-90 150 360)">发生概率</text><text class="axis" x="205" y="245">高概率</text><text class="axis" x="205" y="385">中概率</text><text class="axis" x="205" y="525">低概率</text>
+  <g transform="translate(300 190)">
+    <rect x="0" y="0" width="240" height="140" fill="#fef3c7" stroke="#fff" stroke-width="4"/>
+    <rect x="240" y="0" width="240" height="140" fill="#fb923c" stroke="#fff" stroke-width="4"/><text class="risk" x="318" y="54">R3: CSM</text><text class="txt" x="318" y="82">人力不足</text><text class="txt" x="318" y="108">无法推广</text>
+    <rect x="480" y="0" width="240" height="140" fill="#ef4444" stroke="#fff" stroke-width="4" opacity=".82"/>
+    <rect x="0" y="140" width="240" height="140" fill="#dcfce7" stroke="#fff" stroke-width="4"/><text class="risk" x="78" y="194">R4: 模板 UI</text><text class="txt" x="86" y="222">需要微调</text>
+    <rect x="240" y="140" width="240" height="140" fill="#fef3c7" stroke="#fff" stroke-width="4"/><text class="risk" x="318" y="194">R1: 模板</text><text class="txt" x="318" y="222">覆盖率不足</text>
+    <rect x="480" y="140" width="240" height="140" fill="#fb923c" stroke="#fff" stroke-width="4"/><text class="risk" x="548" y="194">R2: Q4 涨价</text><text class="txt" x="548" y="222">客户不买账</text>
+    <rect x="0" y="280" width="240" height="140" fill="#dcfce7" stroke="#fff" stroke-width="4"/>
+    <rect x="240" y="280" width="240" height="140" fill="#dcfce7" stroke="#fff" stroke-width="4"/>
+    <rect x="480" y="280" width="240" height="140" fill="#fef3c7" stroke="#fff" stroke-width="4"/><text class="risk" x="548" y="334">R5: 技术 VP</text><text class="txt" x="548" y="362">不批开发资源</text>
+  </g>
+</svg>

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="760" viewBox="0 0 1280 760" role="img" aria-labelledby="title desc">
+  <title id="title">偏差响应决策树</title>
+  <desc id="desc">根据偏差影响范围、幅度和是否有预案，选择调整、升级、触发预案或紧急决策会议。</desc>
+  <defs><style>.bg{fill:#f8fafc}.title{font:700 34px Arial,"PingFang SC","Microsoft YaHei",sans-serif;fill:#111827}.q{font:700 18px Arial,"PingFang SC","Microsoft YaHei",sans-serif;fill:#172033}.txt{font:400 14px Arial,"PingFang SC","Microsoft YaHei",sans-serif;fill:#526071}.type{font:700 19px Arial,"PingFang SC","Microsoft YaHei",sans-serif;fill:#111827}.node{fill:#fff;stroke:#d7deea;stroke-width:2}.line{stroke:#94a3b8;stroke-width:3;fill:none;marker-end:url(#arrow)}</style><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L9,3 z" fill="#94a3b8"/></marker></defs>
+  <rect class="bg" width="1280" height="760"/>
+  <text class="title" x="70" y="74">偏差响应决策树</text>
+  <rect class="node" x="500" y="112" width="280" height="70" rx="16"/><text class="q" x="590" y="154">发现偏差信号</text>
+  <path class="line" d="M640 182 V232"/>
+  <rect class="node" x="430" y="232" width="420" height="82" rx="16"/><text class="q" x="500" y="266">影响当前里程碑还是最终目标？</text><text class="txt" x="548" y="292">先判断影响范围</text>
+  <path class="line" d="M430 274 H250 V384"/><path class="line" d="M850 274 H1030 V384"/>
+  <rect class="node" x="110" y="384" width="280" height="78" rx="16"/><text class="q" x="166" y="416">只影响当前里程碑</text><text class="txt" x="184" y="442">继续判断偏差幅度</text>
+  <rect class="node" x="890" y="384" width="280" height="78" rx="16"/><text class="q" x="956" y="416">影响最终目标</text><text class="txt" x="958" y="442">检查是否有风险预案</text>
+  <path class="line" d="M250 462 V540"/><path class="line" d="M320 462 V540"/><path class="line" d="M960 462 V540"/><path class="line" d="M1100 462 V540"/>
+  <rect class="node" x="60" y="540" width="260" height="120" rx="16" fill="#ecfdf5"/><text class="type" x="120" y="578">&lt;20%：内部调整</text><text class="txt" x="92" y="610">加班、重排优先级</text><text class="txt" x="92" y="636">砍 nice-to-have 功能</text>
+  <rect class="node" x="360" y="540" width="260" height="120" rx="16" fill="#fff7ed"/><text class="type" x="418" y="578">≥20%：升级处理</text><text class="txt" x="392" y="610">向上汇报，争取资源</text><text class="txt" x="392" y="636">调整范围或延期</text>
+  <rect class="node" x="710" y="540" width="240" height="120" rx="16" fill="#eff6ff"/><text class="type" x="780" y="578">有预案</text><text class="txt" x="758" y="610">触发风险预案</text><text class="txt" x="758" y="636">按预案卡片执行</text>
+  <rect class="node" x="990" y="540" width="240" height="120" rx="16" fill="#fee2e2"/><text class="type" x="1048" y="578">无预案</text><text class="txt" x="1024" y="610">紧急决策会议</text><text class="txt" x="1024" y="636">资源、范围、时间三选一</text>
+</svg>

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc">
+  <title id="title">表象-本质诊断阶梯</title>
+  <desc id="desc">从现象、直接原因、系统原因到根本原因的四层诊断阶梯。</desc>
+  <defs><style>.bg{fill:#f8fafc}.title{font:700 34px Arial,"PingFang SC","Microsoft YaHei",sans-serif;fill:#111827}.h{font:700 21px Arial,"PingFang SC","Microsoft YaHei",sans-serif;fill:#172033}.txt{font:400 15px Arial,"PingFang SC","Microsoft YaHei",sans-serif;fill:#526071}.small{font:400 13px Arial,"PingFang SC","Microsoft YaHei",sans-serif;fill:#64748b}.card{fill:#fff;stroke:#d7deea;stroke-width:2}.arrow{stroke:#94a3b8;stroke-width:4;fill:none;marker-end:url(#arrow)}</style><marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="4" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,8 L11,4 z" fill="#94a3b8"/></marker></defs>
+  <rect class="bg" width="1280" height="720"/>
+  <text class="title" x="70" y="74">表象-本质诊断阶梯</text>
+  <text class="txt" x="70" y="108">判断标准：解决这个“问题”后，同类现象是否还会反复出现？</text>
+  <g transform="translate(190 150)">
+    <rect class="card" x="0" y="0" width="900" height="90" rx="18"/><circle cx="46" cy="45" r="24" fill="#2563eb"/><text x="38" y="54" font-family="Arial" font-size="24" font-weight="700" fill="#fff">1</text><text class="h" x="90" y="38">看到的现象</text><text class="txt" x="90" y="66">“本季度销售额下降了 15%”</text>
+    <path class="arrow" d="M450 92 V130"/>
+    <rect class="card" x="0" y="130" width="900" height="90" rx="18"/><circle cx="46" cy="175" r="24" fill="#0f9f6e"/><text x="38" y="184" font-family="Arial" font-size="24" font-weight="700" fill="#fff">2</text><text class="h" x="90" y="168">直接原因</text><text class="txt" x="90" y="196">“三个大客户没有续约”</text>
+    <path class="arrow" d="M450 222 V260"/>
+    <rect class="card" x="0" y="260" width="900" height="90" rx="18"/><circle cx="46" cy="305" r="24" fill="#f59e0b"/><text x="38" y="314" font-family="Arial" font-size="24" font-weight="700" fill="#fff">3</text><text class="h" x="90" y="298">系统原因</text><text class="txt" x="90" y="326">“客户成功团队人手不足，无法做到每月客户回访”</text>
+    <path class="arrow" d="M450 352 V390"/>
+    <rect class="card" x="0" y="390" width="900" height="110" rx="18"/><circle cx="46" cy="445" r="24" fill="#ef4444"/><text x="38" y="454" font-family="Arial" font-size="24" font-weight="700" fill="#fff">4</text><text class="h" x="90" y="432">根本原因</text><text class="txt" x="90" y="462">“公司一直将客户成功视为成本中心，而非利润中心”</text><text class="small" x="90" y="486">解决方案应瞄准第 3 层或第 4 层；只修补第 1/2 层，症状会反复出现。</text>
+  </g>
+</svg>

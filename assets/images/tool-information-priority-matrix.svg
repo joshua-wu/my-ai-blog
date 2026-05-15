@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc">
+  <title id="title">信息分级矩阵</title>
+  <desc id="desc">按可信度和与核心假设的相关度，将信息分为必用、验证、存档和丢弃四类。</desc>
+  <defs><style>.bg{fill:#f8fafc}.title{font:700 34px Arial,"PingFang SC","Microsoft YaHei",sans-serif;fill:#111827}.axis{font:700 17px Arial,"PingFang SC","Microsoft YaHei",sans-serif;fill:#334155}.h{font:700 24px Arial,"PingFang SC","Microsoft YaHei",sans-serif;fill:#172033}.txt{font:400 15px Arial,"PingFang SC","Microsoft YaHei",sans-serif;fill:#526071}.small{font:400 13px Arial,"PingFang SC","Microsoft YaHei",sans-serif;fill:#64748b}</style></defs>
+  <rect class="bg" width="1280" height="720"/>
+  <text class="title" x="70" y="74">信息分级矩阵：面对海量信息先分级</text>
+  <text class="axis" x="500" y="135">与核心假设的相关度</text><text class="axis" x="420" y="175">低</text><text class="axis" x="795" y="175">高</text>
+  <text class="axis" x="142" y="365" transform="rotate(-90 142 365)">可信度</text><text class="axis" x="190" y="250">高</text><text class="axis" x="190" y="505">低</text>
+  <g transform="translate(260 190)">
+    <rect x="0" y="0" width="360" height="220" fill="#e0f2fe" stroke="#fff" stroke-width="4"/><text class="h" x="140" y="78">C 存档</text><text class="txt" x="96" y="122">可能在后续有用</text><text class="small" x="112" y="156">低相关，但可信</text>
+    <rect x="360" y="0" width="360" height="220" fill="#dcfce7" stroke="#fff" stroke-width="4"/><text class="h" x="500" y="78">A 必用</text><text class="txt" x="438" y="122">直接支撑或推翻假设</text><text class="small" x="470" y="156">高相关，高可信</text>
+    <rect x="0" y="220" width="360" height="220" fill="#fee2e2" stroke="#fff" stroke-width="4"/><text class="h" x="140" y="298">D 丢弃</text><text class="txt" x="106" y="342">噪音，不值得花时间</text><text class="small" x="118" y="376">低相关，低可信</text>
+    <rect x="360" y="220" width="360" height="220" fill="#fef3c7" stroke="#fff" stroke-width="4"/><text class="h" x="500" y="298">B 验证</text><text class="txt" x="438" y="342">相关但可靠性不足</text><text class="small" x="470" y="376">需要交叉验证</text>
+  </g>
+</svg>

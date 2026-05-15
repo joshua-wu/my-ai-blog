@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc">
+  <title id="title">团队知识循环三机制</title>
+  <desc id="desc">团队知识从产生、沉淀到激活，再由新实践产生新的经验。</desc>
+  <defs><style>.bg{fill:#f8fafc}.title{font:700 34px Arial,"PingFang SC","Microsoft YaHei",sans-serif;fill:#111827}.h{font:700 22px Arial,"PingFang SC","Microsoft YaHei",sans-serif;fill:#172033}.txt{font:400 15px Arial,"PingFang SC","Microsoft YaHei",sans-serif;fill:#526071}.small{font:400 13px Arial,"PingFang SC","Microsoft YaHei",sans-serif;fill:#64748b}.card{fill:#fff;stroke:#d7deea;stroke-width:2}.arrow{stroke:#94a3b8;stroke-width:4;fill:none;marker-end:url(#arrow)}</style><marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="4" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,8 L11,4 z" fill="#94a3b8"/></marker></defs>
+  <rect class="bg" width="1280" height="720"/>
+  <text class="title" x="70" y="74">团队知识循环：产生、沉淀、激活</text>
+  <g transform="translate(220 135)">
+    <path class="arrow" d="M420 82 C610 82 740 190 740 330"/>
+    <path class="arrow" d="M720 390 C650 510 500 575 350 540"/>
+    <path class="arrow" d="M220 500 C90 400 90 220 220 120"/>
+    <rect class="card" x="250" y="0" width="340" height="126" rx="20"/><circle cx="308" cy="63" r="28" fill="#2563eb"/><text x="286" y="72" font-family="Arial" font-size="22" font-weight="700" fill="#fff">产</text><text class="h" x="356" y="54">产生</text><text class="txt" x="356" y="84">复盘会 / 日常经验 → 结构化记录</text>
+    <rect class="card" x="595" y="300" width="340" height="126" rx="20"/><circle cx="653" cy="363" r="28" fill="#0f9f6e"/><text x="631" y="372" font-family="Arial" font-size="22" font-weight="700" fill="#fff">沉</text><text class="h" x="701" y="354">沉淀</text><text class="txt" x="701" y="384">分类存储 → 经验库 / 案例库 / 工具库</text>
+    <rect class="card" x="0" y="300" width="340" height="126" rx="20"/><circle cx="58" cy="363" r="28" fill="#f59e0b"/><text x="36" y="372" font-family="Arial" font-size="22" font-weight="700" fill="#fff">激</text><text class="h" x="106" y="354">激活</text><text class="txt" x="106" y="384">新项目启动时检索 → 指导规划</text>
+    <rect x="272" y="246" width="300" height="68" rx="18" fill="#ecfeff" stroke="#a5f3fc"/>
+    <text class="small" x="320" y="286">新实践产生新的经验，回到“产生”</text>
+  </g>
+</svg>

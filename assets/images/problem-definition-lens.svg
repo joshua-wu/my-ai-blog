@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc">
+  <title id="title">问题定义透镜</title>
+  <desc id="desc">把表象问题通过场景、对象、影响、目标和边界过滤，形成清晰的问题陈述。</desc>
+  <defs>
+    <style>
+      .bg{fill:#f8fafc}.title{font:700 34px Arial,"PingFang SC","Microsoft YaHei",sans-serif;fill:#111827}.h{font:700 20px Arial,"PingFang SC","Microsoft YaHei",sans-serif;fill:#172033}.txt{font:400 15px Arial,"PingFang SC","Microsoft YaHei",sans-serif;fill:#526071}.small{font:400 13px Arial,"PingFang SC","Microsoft YaHei",sans-serif;fill:#64748b}.box{fill:#fff;stroke:#d7deea;stroke-width:2}.line{stroke:#94a3b8;stroke-width:3;fill:none;marker-end:url(#arrow)}
+    </style>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L9,3 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect class="bg" width="1280" height="720"/>
+  <text class="title" x="64" y="72">问题识别与定义：从表象到可执行问题陈述</text>
+  <rect class="box" x="70" y="160" width="240" height="360" rx="18"/>
+  <text class="h" x="122" y="210">表象输入</text>
+  <text class="txt" x="108" y="260">“用户增长慢”</text>
+  <text class="txt" x="108" y="304">“项目推不动”</text>
+  <text class="txt" x="108" y="348">“客户不满意”</text>
+  <text class="small" x="108" y="440">特点：模糊、归因未验证、</text>
+  <text class="small" x="108" y="464">目标与边界不清晰</text>
+
+  <path class="line" d="M310 340 H410"/>
+  <g transform="translate(410 128)">
+    <rect class="box" width="460" height="424" rx="22"/>
+    <text class="h" x="154" y="54">问题定义透镜</text>
+    <g>
+      <rect x="54" y="90" width="158" height="58" rx="14" fill="#dbeafe"/><text class="txt" x="92" y="126">谁受影响</text>
+      <rect x="250" y="90" width="158" height="58" rx="14" fill="#dcfce7"/><text class="txt" x="286" y="126">什么场景</text>
+      <rect x="54" y="178" width="158" height="58" rx="14" fill="#fef3c7"/><text class="txt" x="92" y="214">具体困难</text>
+      <rect x="250" y="178" width="158" height="58" rx="14" fill="#fee2e2"/><text class="txt" x="286" y="214">量化影响</text>
+      <rect x="54" y="266" width="158" height="58" rx="14" fill="#ede9fe"/><text class="txt" x="92" y="302">期望状态</text>
+      <rect x="250" y="266" width="158" height="58" rx="14" fill="#cffafe"/><text class="txt" x="286" y="302">约束边界</text>
+    </g>
+    <text class="small" x="74" y="374">配套工具：5Why、利益相关者地图、SCOPE 提问框架</text>
+  </g>
+  <path class="line" d="M870 340 H970"/>
+  <rect class="box" x="970" y="160" width="240" height="360" rx="18"/>
+  <text class="h" x="1016" y="210">标准输出</text>
+  <text class="txt" x="1002" y="266">对象 + 场景 + 困难</text>
+  <text class="txt" x="1002" y="310">负面结果可量化</text>
+  <text class="txt" x="1002" y="354">目标状态可验收</text>
+  <rect x="1002" y="410" width="176" height="54" rx="14" fill="#ecfeff" stroke="#a5f3fc"/>
+  <text class="small" x="1026" y="442">一句话问题定义</text>
+</svg>

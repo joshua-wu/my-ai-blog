@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc">
+  <title id="title">实战案例工具链地图</title>
+  <desc id="desc">展示第八章实战案例中从问题陈述到 AAR 的工具串联路径。</desc>
+  <defs>
+    <style>
+      .bg{fill:#f8fafc}.title{font:700 34px Arial,"PingFang SC","Microsoft YaHei",sans-serif;fill:#111827}.h{font:700 18px Arial,"PingFang SC","Microsoft YaHei",sans-serif;fill:#172033}.txt{font:400 13px Arial,"PingFang SC","Microsoft YaHei",sans-serif;fill:#526071}.box{fill:#fff;stroke:#d7deea;stroke-width:2}.line{stroke:#94a3b8;stroke-width:3;fill:none;marker-end:url(#arrow)}
+    </style>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L9,3 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect class="bg" width="1280" height="720"/>
+  <text class="title" x="64" y="72">实战案例：端到端工具链地图</text>
+  <g transform="translate(72 160)">
+    <rect class="box" width="170" height="116" rx="16"/><text class="h" x="36" y="42">问题陈述</text><text class="txt" x="28" y="76">对象、场景、目标</text>
+  </g>
+  <path class="line" d="M242 218 H318"/>
+  <g transform="translate(318 160)">
+    <rect class="box" width="170" height="116" rx="16"/><text class="h" x="54" y="42">假设树</text><text class="txt" x="28" y="76">拆根因与证据</text>
+  </g>
+  <path class="line" d="M488 218 H564"/>
+  <g transform="translate(564 160)">
+    <rect class="box" width="170" height="116" rx="16"/><text class="h" x="46" y="42">决策矩阵</text><text class="txt" x="28" y="76">多方案评分</text>
+  </g>
+  <path class="line" d="M734 218 H810"/>
+  <g transform="translate(810 160)">
+    <rect class="box" width="170" height="116" rx="16"/><text class="h" x="50" y="42">风险矩阵</text><text class="txt" x="28" y="76">预案和触发器</text>
+  </g>
+  <path class="line" d="M980 218 H1056"/>
+  <g transform="translate(1056 160)">
+    <rect class="box" width="170" height="116" rx="16"/><text class="h" x="48" y="42">RACI</text><text class="txt" x="28" y="76">责任和协作边界</text>
+  </g>
+  <path class="line" d="M1140 276 V384 H1056"/>
+  <g transform="translate(810 384)">
+    <rect class="box" width="170" height="116" rx="16"/><text class="h" x="42" y="42">监控仪表盘</text><text class="txt" x="28" y="76">指标、偏差、升级</text>
+  </g>
+  <path class="line" d="M810 442 H734"/>
+  <g transform="translate(564 384)">
+    <rect class="box" width="170" height="116" rx="16"/><text class="h" x="58" y="42">AAR</text><text class="txt" x="28" y="76">复盘和方法更新</text>
+  </g>
+  <path class="line" d="M564 442 H488"/>
+  <g transform="translate(318 384)">
+    <rect class="box" width="170" height="116" rx="16"/><text class="h" x="40" y="42">案例资产</text><text class="txt" x="28" y="76">模板、清单、教训</text>
+  </g>
+  <rect x="420" y="570" width="440" height="54" rx="18" fill="#ecfeff" stroke="#a5f3fc"/>
+  <text class="h" x="524" y="604">从一次项目，沉淀一套可复用打法</text>
+</svg>

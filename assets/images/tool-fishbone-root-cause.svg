@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc">
+  <title id="title">鱼骨图根因分析模板</title>
+  <desc id="desc">从人员、流程、工具技术、环境外部、管理、数据度量六类因素分析问题结果。</desc>
+  <defs><style>.bg{fill:#f8fafc}.title{font:700 34px Arial,"PingFang SC","Microsoft YaHei",sans-serif;fill:#111827}.h{font:700 17px Arial,"PingFang SC","Microsoft YaHei",sans-serif;fill:#172033}.txt{font:400 13px Arial,"PingFang SC","Microsoft YaHei",sans-serif;fill:#526071}.bone{stroke:#94a3b8;stroke-width:3;fill:none}.main{stroke:#334155;stroke-width:5;fill:none}.head{fill:#fff;stroke:#334155;stroke-width:3}</style></defs>
+  <rect class="bg" width="1280" height="720"/>
+  <text class="title" x="70" y="74">鱼骨图：复杂问题的根因发散</text>
+  <g transform="translate(120 128)">
+    <path class="main" d="M140 310 H900"/>
+    <path class="main" d="M900 310 L980 250 M900 310 L980 370"/>
+    <rect class="head" x="940" y="250" width="190" height="120" rx="18"/>
+    <text class="h" x="1008" y="300">问题</text><text class="txt" x="990" y="328">具体结果</text>
+    <g>
+      <path class="bone" d="M260 310 L150 170"/><text class="h" x="112" y="134">人员因素</text><text class="txt" x="72" y="160">技能不匹配、人手不足</text><text class="txt" x="72" y="184">培训不到位、关键人员离职</text>
+      <path class="bone" d="M440 310 L330 170"/><text class="h" x="315" y="134">流程因素</text><text class="txt" x="282" y="160">审批冗余、标准缺失</text><text class="txt" x="282" y="184">协作断裂、信息断层</text>
+      <path class="bone" d="M620 310 L510 170"/><text class="h" x="510" y="134">工具/技术</text><text class="txt" x="470" y="160">性能瓶颈、数据不准</text><text class="txt" x="470" y="184">易用性差、缺少自动化</text>
+      <path class="bone" d="M300 310 L190 470"/><text class="h" x="135" y="506">环境/外部</text><text class="txt" x="90" y="532">市场变化、法规调整</text><text class="txt" x="90" y="556">竞品动作、季节性因素</text>
+      <path class="bone" d="M500 310 L390 470"/><text class="h" x="382" y="506">管理因素</text><text class="txt" x="330" y="532">目标不合理、激励偏差</text><text class="txt" x="330" y="556">资源不均、决策链过长</text>
+      <path class="bone" d="M700 310 L590 470"/><text class="h" x="594" y="506">数据/度量</text><text class="txt" x="548" y="532">缺少指标、口径不一</text><text class="txt" x="548" y="556">反馈慢、获取成本高</text>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc">
+  <title id="title">监控与纠偏仪表盘</title>
+  <desc id="desc">展示先行指标、状态灯、偏差分析和三级纠偏机制。</desc>
+  <defs>
+    <style>
+      .bg{fill:#f8fafc}.title{font:700 34px Arial,"PingFang SC","Microsoft YaHei",sans-serif;fill:#111827}.h{font:700 19px Arial,"PingFang SC","Microsoft YaHei",sans-serif;fill:#172033}.txt{font:400 14px Arial,"PingFang SC","Microsoft YaHei",sans-serif;fill:#526071}.box{fill:#fff;stroke:#d7deea;stroke-width:2}.line{stroke:#94a3b8;stroke-width:3;fill:none;marker-end:url(#arrow)}
+    </style>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L9,3 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect class="bg" width="1280" height="720"/>
+  <text class="title" x="64" y="72">监控与纠偏：让偏差尽早暴露</text>
+  <rect class="box" x="70" y="128" width="1140" height="500" rx="22"/>
+  <text class="h" x="112" y="178">一页纸监控仪表盘</text>
+  <g transform="translate(112 216)">
+    <rect width="260" height="150" rx="16" fill="#eff6ff" stroke="#bfdbfe"/>
+    <text class="txt" x="28" y="42">先行指标</text>
+    <text class="h" x="28" y="86">需求冻结率 86%</text>
+    <path d="M28 116 H220" stroke="#dbeafe" stroke-width="12" stroke-linecap="round"/>
+    <path d="M28 116 H190" stroke="#2563eb" stroke-width="12" stroke-linecap="round"/>
+  </g>
+  <g transform="translate(418 216)">
+    <rect width="260" height="150" rx="16" fill="#f0fdf4" stroke="#bbf7d0"/>
+    <text class="txt" x="28" y="42">过程指标</text>
+    <text class="h" x="28" y="86">交付节奏正常</text>
+    <circle cx="48" cy="120" r="12" fill="#22c55e"/><circle cx="92" cy="120" r="12" fill="#22c55e"/><circle cx="136" cy="120" r="12" fill="#f59e0b"/>
+  </g>
+  <g transform="translate(724 216)">
+    <rect width="260" height="150" rx="16" fill="#fff7ed" stroke="#fed7aa"/>
+    <text class="txt" x="28" y="42">结果指标</text>
+    <text class="h" x="28" y="86">目标达成 72%</text>
+    <polyline points="28,122 72,106 116,112 160,86 212,72" fill="none" stroke="#f59e0b" stroke-width="4"/>
+  </g>
+  <g transform="translate(112 420)">
+    <rect width="316" height="132" rx="16" fill="#fff" stroke="#e2e8f0"/>
+    <text class="h" x="28" y="42">偏差分析五问</text>
+    <text class="txt" x="28" y="78">发生了什么、偏差多大、何时开始、</text>
+    <text class="txt" x="28" y="104">影响什么、根因假设是什么</text>
+  </g>
+  <path class="line" d="M450 486 H544"/>
+  <g transform="translate(544 420)">
+    <rect width="500" height="132" rx="16" fill="#fff" stroke="#e2e8f0"/>
+    <text class="h" x="28" y="42">三级纠偏机制</text>
+    <rect x="28" y="72" width="120" height="36" rx="18" fill="#dcfce7"/><text class="txt" x="58" y="96">微调</text>
+    <rect x="190" y="72" width="120" height="36" rx="18" fill="#fef3c7"/><text class="txt" x="220" y="96">重排</text>
+    <rect x="352" y="72" width="120" height="36" rx="18" fill="#fee2e2"/><text class="txt" x="382" y="96">升级</text>
+  </g>
+</svg>

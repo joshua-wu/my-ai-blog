@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc">
+  <title id="title">复盘加速学习曲线</title>
+  <desc id="desc">有复盘的学习曲线持续下降，无复盘的学习曲线趋于平坦。</desc>
+  <defs><style>.bg{fill:#f8fafc}.title{font:700 34px Arial,"PingFang SC","Microsoft YaHei",sans-serif;fill:#111827}.axis{font:700 16px Arial,"PingFang SC","Microsoft YaHei",sans-serif;fill:#334155}.txt{font:400 15px Arial,"PingFang SC","Microsoft YaHei",sans-serif;fill:#526071}.small{font:400 13px Arial,"PingFang SC","Microsoft YaHei",sans-serif;fill:#64748b}.no{stroke:#ef4444;stroke-width:6;fill:none}.yes{stroke:#2563eb;stroke-width:6;fill:none}.dash{stroke:#94a3b8;stroke-width:2;stroke-dasharray:7 7}</style></defs>
+  <rect class="bg" width="1280" height="720"/>
+  <text class="title" x="70" y="74">复盘让学习曲线持续下降</text>
+  <g transform="translate(170 130)">
+    <path d="M80 470 V40 M80 470 H980" stroke="#334155" stroke-width="3" fill="none"/>
+    <text class="axis" x="-18" y="70">单位成本 / 完成时间</text><text class="axis" x="800" y="515">累计项目 / 任务数量</text>
+    <path class="no" d="M120 420 C250 300 360 240 520 220 C650 206 770 206 930 206"/>
+    <path class="yes" d="M120 420 C250 310 360 255 480 205 C570 168 665 126 760 94 C830 70 885 56 940 48"/>
+    <line class="dash" x1="520" y1="220" x2="930" y2="220"/>
+    <text class="txt" x="570" y="192" fill="#ef4444">无复盘：经验依赖记忆，逐渐趋平</text>
+    <text class="txt" x="610" y="84" fill="#2563eb">有复盘：经验显性化，持续降低成本</text>
+    <rect x="160" y="530" width="690" height="52" rx="16" fill="#eff6ff" stroke="#bfdbfe"/>
+    <text class="small" x="194" y="562">关键前提：经验被结构化提炼，并回注为清单、模板、流程和案例库。</text>
+  </g>
+</svg>

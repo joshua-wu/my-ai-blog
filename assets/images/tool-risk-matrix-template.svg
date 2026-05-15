@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc">
+  <title id="title">风险矩阵模板</title>
+  <desc id="desc">用概率和影响程度评估风险等级，区分接受、关注、严重和致命风险。</desc>
+  <defs><style>.bg{fill:#f8fafc}.title{font:700 34px Arial,"PingFang SC","Microsoft YaHei",sans-serif;fill:#111827}.axis{font:700 17px Arial,"PingFang SC","Microsoft YaHei",sans-serif;fill:#334155}.h{font:700 22px Arial,"PingFang SC","Microsoft YaHei",sans-serif;fill:#172033}.txt{font:400 14px Arial,"PingFang SC","Microsoft YaHei",sans-serif;fill:#526071}.white{fill:#fff}</style></defs>
+  <rect class="bg" width="1280" height="720"/>
+  <text class="title" x="70" y="74">风险矩阵：概率 × 影响</text>
+  <text class="axis" x="560" y="132">影响程度</text><text class="axis" x="340" y="174">低影响</text><text class="axis" x="590" y="174">中影响</text><text class="axis" x="840" y="174">高影响</text>
+  <text class="axis" x="150" y="360" transform="rotate(-90 150 360)">发生概率</text>
+  <text class="axis" x="205" y="245">高概率</text><text class="axis" x="205" y="385">中概率</text><text class="axis" x="205" y="525">低概率</text>
+  <g transform="translate(300 190)">
+    <rect x="0" y="0" width="240" height="140" fill="#fef3c7" stroke="#fff" stroke-width="4"/><text class="h" x="88" y="60">关注</text><text class="txt" x="82" y="96">定期监控</text>
+    <rect x="240" y="0" width="240" height="140" fill="#fb923c" stroke="#fff" stroke-width="4"/><text class="h white" x="310" y="60">严重</text><text class="txt white" x="300" y="96">必须有预案</text>
+    <rect x="480" y="0" width="240" height="140" fill="#ef4444" stroke="#fff" stroke-width="4"/><text class="h white" x="548" y="60">致命</text><text class="txt white" x="518" y="96">无预案不应选择</text>
+    <rect x="0" y="140" width="240" height="140" fill="#dcfce7" stroke="#fff" stroke-width="4"/><text class="h" x="88" y="200">接受</text><text class="txt" x="82" y="236">记录即可</text>
+    <rect x="240" y="140" width="240" height="140" fill="#fef3c7" stroke="#fff" stroke-width="4"/><text class="h" x="328" y="200">关注</text><text class="txt" x="300" y="236">制定预案</text>
+    <rect x="480" y="140" width="240" height="140" fill="#fb923c" stroke="#fff" stroke-width="4"/><text class="h white" x="548" y="200">严重</text><text class="txt white" x="540" y="236">必须有预案</text>
+    <rect x="0" y="280" width="240" height="140" fill="#dcfce7" stroke="#fff" stroke-width="4"/><text class="h" x="88" y="340">接受</text><text class="txt" x="82" y="376">无需行动</text>
+    <rect x="240" y="280" width="240" height="140" fill="#dcfce7" stroke="#fff" stroke-width="4"/><text class="h" x="328" y="340">接受</text><text class="txt" x="322" y="376">记录即可</text>
+    <rect x="480" y="280" width="240" height="140" fill="#fef3c7" stroke="#fff" stroke-width="4"/><text class="h" x="568" y="340">关注</text><text class="txt" x="540" y="376">制定预案</text>
+  </g>
+</svg>

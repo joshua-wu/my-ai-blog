@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc">
+  <title id="title">结构化问题解决方法论总览</title>
+  <desc id="desc">展示从问题定义到复盘迭代的六步闭环，以及八章内容如何映射到闭环。</desc>
+  <defs>
+    <style>
+      .bg{fill:#f8fafc}.title{font:700 38px Arial,"PingFang SC","Microsoft YaHei",sans-serif;fill:#172033}.sub{font:400 18px Arial,"PingFang SC","Microsoft YaHei",sans-serif;fill:#667085}.label{font:700 18px Arial,"PingFang SC","Microsoft YaHei",sans-serif;fill:#172033}.small{font:400 14px Arial,"PingFang SC","Microsoft YaHei",sans-serif;fill:#596579}.tiny{font:400 12px Arial,"PingFang SC","Microsoft YaHei",sans-serif;fill:#667085}.box{fill:#fff;stroke:#d7deea;stroke-width:2}.accent1{fill:#2563eb}.accent2{fill:#0f9f6e}.accent3{fill:#f59e0b}.accent4{fill:#ef4444}.accent5{fill:#7c3aed}.accent6{fill:#0891b2}.line{stroke:#94a3b8;stroke-width:3;fill:none;marker-end:url(#arrow)}
+    </style>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#94a3b8"/>
+    </marker>
+  </defs>
+  <rect class="bg" width="1280" height="720"/>
+  <text class="title" x="64" y="72">做事方法论：问题解决框架</text>
+  <text class="sub" x="64" y="108">用一套可复用的闭环，把模糊问题转化为可验证、可执行、可迭代的行动系统</text>
+
+  <rect class="box" x="64" y="150" width="336" height="472" rx="18"/>
+  <text class="label" x="96" y="198">三条底层原则</text>
+  <circle class="accent1" cx="112" cy="250" r="18"/><text class="label" x="146" y="256">先定义，再解决</text>
+  <text class="small" x="146" y="282">问题定义决定解空间边界</text>
+  <circle class="accent2" cx="112" cy="352" r="18"/><text class="label" x="146" y="358">假设驱动分析</text>
+  <text class="small" x="146" y="384">用验证问题缩小信息范围</text>
+  <circle class="accent3" cx="112" cy="454" r="18"/><text class="label" x="146" y="460">方案必须可执行</text>
+  <text class="small" x="146" y="486">资源、政治、能力三重过滤</text>
+  <rect x="96" y="540" width="272" height="46" rx="12" fill="#eff6ff" stroke="#bfdbfe"/>
+  <text class="small" x="122" y="568">目标：减少返工、提高决策质量</text>
+
+  <g transform="translate(510 152)">
+    <text class="label" x="95" y="18">六步闭环</text>
+    <path d="M190 62 C306 62 400 156 400 272 C400 388 306 482 190 482 C74 482 -20 388 -20 272 C-20 156 74 62 190 62" fill="#fff" stroke="#d7deea" stroke-width="3"/>
+    <path class="line" d="M190 62 C260 62 324 94 366 146"/>
+    <path class="line" d="M398 244 C404 315 374 382 320 425"/>
+    <path class="line" d="M228 480 C156 492 83 464 38 408"/>
+    <path class="line" d="M-18 294 C-28 222 2 152 58 108"/>
+    <g>
+      <rect x="136" y="34" width="108" height="56" rx="14" fill="#dbeafe"/><text class="small" x="162" y="67">识别定义</text>
+      <rect x="326" y="134" width="108" height="56" rx="14" fill="#dcfce7"/><text class="small" x="352" y="167">分析诊断</text>
+      <rect x="326" y="356" width="108" height="56" rx="14" fill="#fef3c7"/><text class="small" x="352" y="389">方案决策</text>
+      <rect x="136" y="454" width="108" height="56" rx="14" fill="#fee2e2"/><text class="small" x="162" y="487">执行推进</text>
+      <rect x="-54" y="356" width="108" height="56" rx="14" fill="#ede9fe"/><text class="small" x="-28" y="389">监控纠偏</text>
+      <rect x="-54" y="134" width="108" height="56" rx="14" fill="#cffafe"/><text class="small" x="-28" y="167">复盘迭代</text>
+    </g>
+  </g>
+
+  <rect class="box" x="924" y="150" width="292" height="472" rx="18"/>
+  <text class="label" x="956" y="198">章节映射</text>
+  <g class="tiny">
+    <text x="956" y="244">01 总纲：原则与全局框架</text>
+    <text x="956" y="286">02 问题识别与定义</text>
+    <text x="956" y="328">03 信息收集与分析</text>
+    <text x="956" y="370">04 方案生成与决策</text>
+    <text x="956" y="412">05 执行与推进</text>
+    <text x="956" y="454">06 监控与纠偏</text>
+    <text x="956" y="496">07 复盘与迭代</text>
+    <text x="956" y="538">08 实战案例串联</text>
+  </g>
+  <rect x="956" y="570" width="228" height="24" rx="12" fill="#e0f2fe"/>
+  <text class="tiny" x="980" y="587">62 个实操工具，按流程组织</text>
+</svg>

@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc">
+  <title id="title">方案决策与风险矩阵</title>
+  <desc id="desc">左侧是多方案加权决策矩阵，右侧是概率乘影响风险矩阵。</desc>
+  <defs>
+    <style>
+      .bg{fill:#f8fafc}.title{font:700 34px Arial,"PingFang SC","Microsoft YaHei",sans-serif;fill:#111827}.h{font:700 20px Arial,"PingFang SC","Microsoft YaHei",sans-serif;fill:#172033}.txt{font:400 14px Arial,"PingFang SC","Microsoft YaHei",sans-serif;fill:#526071}.head{font:700 13px Arial,"PingFang SC","Microsoft YaHei",sans-serif;fill:#334155}.box{fill:#fff;stroke:#d7deea;stroke-width:2}.grid{stroke:#e2e8f0;stroke-width:1}.score{font:700 22px Arial,sans-serif;fill:#111827}
+    </style>
+  </defs>
+  <rect class="bg" width="1280" height="720"/>
+  <text class="title" x="64" y="72">方案生成与决策：质量和风险同时评估</text>
+  <rect class="box" x="70" y="128" width="560" height="500" rx="18"/>
+  <text class="h" x="104" y="174">多方案加权决策矩阵</text>
+  <rect x="104" y="214" width="492" height="288" rx="12" fill="#fff"/>
+  <g class="grid">
+    <path d="M104 262 H596 M104 310 H596 M104 358 H596 M104 406 H596 M104 454 H596"/>
+    <path d="M214 214 V502 M320 214 V502 M426 214 V502 M532 214 V502"/>
+  </g>
+  <g class="head">
+    <text x="130" y="244">方案</text><text x="238" y="244">收益</text><text x="344" y="244">成本</text><text x="450" y="244">可行性</text><text x="548" y="244">总分</text>
+  </g>
+  <g class="txt">
+    <text x="124" y="292">A</text><text x="254" y="292">4</text><text x="360" y="292">3</text><text x="474" y="292">5</text><text x="552" y="292">4.2</text>
+    <text x="124" y="340">B</text><text x="254" y="340">5</text><text x="360" y="340">2</text><text x="474" y="340">3</text><text x="552" y="340">3.7</text>
+    <text x="124" y="388">C</text><text x="254" y="388">3</text><text x="360" y="388">5</text><text x="474" y="388">4</text><text x="552" y="388">4.0</text>
+  </g>
+  <rect x="104" y="536" width="492" height="50" rx="12" fill="#eff6ff" stroke="#bfdbfe"/>
+  <text class="txt" x="128" y="566">决策记录：权重、评分理由、关键假设、反对意见</text>
+
+  <rect class="box" x="690" y="128" width="520" height="500" rx="18"/>
+  <text class="h" x="724" y="174">风险矩阵：概率 × 影响</text>
+  <g transform="translate(778 226)">
+    <rect width="330" height="330" rx="10" fill="#fff"/>
+    <rect x="0" y="220" width="110" height="110" fill="#dcfce7"/>
+    <rect x="110" y="220" width="110" height="110" fill="#fef3c7"/>
+    <rect x="220" y="220" width="110" height="110" fill="#fee2e2"/>
+    <rect x="0" y="110" width="110" height="110" fill="#fef3c7"/>
+    <rect x="110" y="110" width="110" height="110" fill="#fde68a"/>
+    <rect x="220" y="110" width="110" height="110" fill="#fecaca"/>
+    <rect x="0" y="0" width="110" height="110" fill="#fee2e2"/>
+    <rect x="110" y="0" width="110" height="110" fill="#fecaca"/>
+    <rect x="220" y="0" width="110" height="110" fill="#ef4444" opacity=".82"/>
+    <path d="M110 0 V330 M220 0 V330 M0 110 H330 M0 220 H330" stroke="#fff" stroke-width="3"/>
+    <text class="score" x="34" y="176">R2</text><text class="score" x="254" y="66" fill="#fff">R1</text><text class="score" x="144" y="286">R3</text>
+  </g>
+  <text class="txt" x="808" y="588">横轴：影响程度；纵轴：发生概率</text>
+  <text class="txt" x="808" y="614">高风险项必须有预案、触发条件和责任人</text>
+</svg>

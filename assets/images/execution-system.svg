@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc">
+  <title id="title">执行推进系统</title>
+  <desc id="desc">展示目标拆解、RACI 责任矩阵、里程碑和沟通节奏构成执行推进系统。</desc>
+  <defs>
+    <style>
+      .bg{fill:#f8fafc}.title{font:700 34px Arial,"PingFang SC","Microsoft YaHei",sans-serif;fill:#111827}.h{font:700 19px Arial,"PingFang SC","Microsoft YaHei",sans-serif;fill:#172033}.txt{font:400 14px Arial,"PingFang SC","Microsoft YaHei",sans-serif;fill:#526071}.box{fill:#fff;stroke:#d7deea;stroke-width:2}.line{stroke:#94a3b8;stroke-width:3;fill:none;marker-end:url(#arrow)}.pill{font:700 13px Arial,sans-serif;fill:#fff}
+    </style>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L9,3 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect class="bg" width="1280" height="720"/>
+  <text class="title" x="64" y="72">执行与推进：把方案变成可追踪行动</text>
+  <rect class="box" x="70" y="132" width="260" height="454" rx="18"/>
+  <text class="h" x="118" y="178">任务三层拆解</text>
+  <rect x="112" y="230" width="176" height="54" rx="14" fill="#dbeafe"/><text class="txt" x="174" y="263">目标</text>
+  <path class="line" d="M200 284 V326"/>
+  <rect x="112" y="326" width="176" height="54" rx="14" fill="#dcfce7"/><text class="txt" x="168" y="359">里程碑</text>
+  <path class="line" d="M200 380 V422"/>
+  <rect x="112" y="422" width="176" height="54" rx="14" fill="#fef3c7"/><text class="txt" x="146" y="455">最小行动单元</text>
+
+  <path class="line" d="M330 360 H420"/>
+  <rect class="box" x="420" y="132" width="360" height="454" rx="18"/>
+  <text class="h" x="538" y="178">RACI 责任矩阵</text>
+  <g transform="translate(456 226)">
+    <rect width="288" height="220" rx="12" fill="#fff"/>
+    <path d="M0 44 H288 M0 88 H288 M0 132 H288 M0 176 H288 M72 0 V220 M144 0 V220 M216 0 V220" stroke="#e2e8f0"/>
+    <text class="txt" x="22" y="28">任务</text><text class="txt" x="94" y="28">R</text><text class="txt" x="166" y="28">A</text><text class="txt" x="238" y="28">C/I</text>
+    <text class="txt" x="16" y="72">设计</text><text class="txt" x="92" y="72">PM</text><text class="txt" x="164" y="72">Lead</text><text class="txt" x="232" y="72">Biz</text>
+    <text class="txt" x="16" y="116">开发</text><text class="txt" x="88" y="116">Dev</text><text class="txt" x="164" y="116">Lead</text><text class="txt" x="232" y="116">QA</text>
+    <text class="txt" x="16" y="160">上线</text><text class="txt" x="88" y="160">Ops</text><text class="txt" x="164" y="160">PM</text><text class="txt" x="232" y="160">All</text>
+  </g>
+  <text class="txt" x="482" y="506">每件事有且只有一个最终负责人</text>
+
+  <path class="line" d="M780 360 H870"/>
+  <rect class="box" x="870" y="132" width="340" height="454" rx="18"/>
+  <text class="h" x="974" y="178">节奏与验收</text>
+  <path d="M920 306 H1158" stroke="#cbd5e1" stroke-width="4"/>
+  <circle cx="940" cy="306" r="14" fill="#2563eb"/><circle cx="1012" cy="306" r="14" fill="#0f9f6e"/><circle cx="1084" cy="306" r="14" fill="#f59e0b"/><circle cx="1156" cy="306" r="14" fill="#ef4444"/>
+  <text class="txt" x="910" y="354">M1 方案确认</text>
+  <text class="txt" x="984" y="396">M2 原型通过</text>
+  <text class="txt" x="1052" y="438">M3 灰度上线</text>
+  <rect x="930" y="480" width="220" height="48" rx="14" fill="#ecfeff" stroke="#a5f3fc"/>
+  <text class="txt" x="962" y="510">周会、日报、升级机制</text>
+</svg>

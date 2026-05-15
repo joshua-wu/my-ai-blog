@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc">
+  <title id="title">复盘与迭代飞轮</title>
+  <desc id="desc">展示 AAR 复盘、经验萃取、知识管理和方法论更新如何形成复利飞轮。</desc>
+  <defs>
+    <style>
+      .bg{fill:#f8fafc}.title{font:700 34px Arial,"PingFang SC","Microsoft YaHei",sans-serif;fill:#111827}.h{font:700 20px Arial,"PingFang SC","Microsoft YaHei",sans-serif;fill:#172033}.txt{font:400 14px Arial,"PingFang SC","Microsoft YaHei",sans-serif;fill:#526071}.box{fill:#fff;stroke:#d7deea;stroke-width:2}.arrow{stroke:#94a3b8;stroke-width:4;fill:none;marker-end:url(#arrow)}
+    </style>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="4" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,8 L11,4 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect class="bg" width="1280" height="720"/>
+  <text class="title" x="64" y="72">复盘与迭代：把一次经验变成组织能力</text>
+  <circle cx="640" cy="370" r="210" fill="#fff" stroke="#d7deea" stroke-width="3"/>
+  <path class="arrow" d="M640 160 C760 160 850 250 850 370"/>
+  <path class="arrow" d="M850 370 C850 490 760 580 640 580"/>
+  <path class="arrow" d="M640 580 C520 580 430 490 430 370"/>
+  <path class="arrow" d="M430 370 C430 250 520 160 640 160"/>
+  <g>
+    <rect class="box" x="520" y="118" width="240" height="90" rx="16"/>
+    <text class="h" x="600" y="154">AAR 复盘</text>
+    <text class="txt" x="558" y="184">预期、实际、差异、原因</text>
+    <rect class="box" x="812" y="326" width="260" height="90" rx="16"/>
+    <text class="h" x="882" y="362">经验萃取</text>
+    <text class="txt" x="852" y="392">从事件抽象为原则和模板</text>
+    <rect class="box" x="520" y="532" width="240" height="90" rx="16"/>
+    <text class="h" x="590" y="568">知识管理</text>
+    <text class="txt" x="558" y="598">沉淀、检索、传播、复用</text>
+    <rect class="box" x="208" y="326" width="260" height="90" rx="16"/>
+    <text class="h" x="278" y="362">方法更新</text>
+    <text class="txt" x="248" y="392">更新清单、标准和案例库</text>
+  </g>
+  <rect x="532" y="306" width="216" height="120" rx="20" fill="#ecfeff" stroke="#a5f3fc"/>
+  <text class="h" x="592" y="352">复利飞轮</text>
+  <text class="txt" x="566" y="386">每次实践降低下次成本</text>
+</svg>

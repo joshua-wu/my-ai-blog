@@ -82,7 +82,8 @@ title: Home
     {% if post.cover %}
       <img class="grid-card-img" src="{{ post.cover | relative_url }}" alt="{{ post.title }}" loading="lazy">
     {% else %}
-      {% assign hue = forloop.index0 | modulo: 6 | times: 60 %}
+      {% assign remainder = forloop.index0 | modulo: 6 %}
+      {% assign hue = remainder | times: 60 %}
       <div class="grid-card-placeholder" style="background: linear-gradient(135deg, hsl({{ hue }}, 60%, 65%), hsl({{ hue | plus: 40 }}, 50%, 45%));">
         &#9998;
       </div>

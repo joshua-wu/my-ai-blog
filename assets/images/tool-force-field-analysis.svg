@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc">
+  <title id="title">力场分析图</title>
+  <desc id="desc">对比推动力和阻力，优先削减最大阻力以推动变革落地。</desc>
+  <defs><style>.bg{fill:#f8fafc}.title{font:700 34px Arial,"PingFang SC","Microsoft YaHei",sans-serif;fill:#111827}.h{font:700 20px Arial,"PingFang SC","Microsoft YaHei",sans-serif;fill:#172033}.txt{font:400 15px Arial,"PingFang SC","Microsoft YaHei",sans-serif;fill:#526071}.small{font:400 13px Arial,"PingFang SC","Microsoft YaHei",sans-serif;fill:#64748b}.mid{stroke:#cbd5e1;stroke-width:3}.push{stroke:#16a34a;stroke-width:6;fill:none;marker-end:url(#push)}.resist{stroke:#ef4444;stroke-width:6;fill:none;marker-end:url(#resist)}.card{fill:#fff;stroke:#d7deea;stroke-width:2}</style><marker id="push" markerWidth="12" markerHeight="12" refX="10" refY="4" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,8 L11,4 z" fill="#16a34a"/></marker><marker id="resist" markerWidth="12" markerHeight="12" refX="10" refY="4" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,8 L11,4 z" fill="#ef4444"/></marker></defs>
+  <rect class="bg" width="1280" height="720"/>
+  <text class="title" x="70" y="74">力场分析：推动力与阻力的合力</text>
+  <line class="mid" x1="640" y1="150" x2="640" y2="540"/>
+  <text class="h" x="250" y="140">推动力</text><text class="h" x="900" y="140">阻力</text>
+  <g>
+    <path class="push" d="M210 210 H600"/><text class="txt" x="220" y="198">[强] 老板强力支持</text>
+    <path class="push" d="M300 300 H600" stroke-width="4"/><text class="txt" x="220" y="288">[中] 数据证明现状不可持续</text>
+    <path class="push" d="M300 390 H600" stroke-width="4"/><text class="txt" x="220" y="378">[中] 竞品已在做，差距扩大</text>
+    <path class="push" d="M400 480 H600" stroke-width="3"/><text class="txt" x="220" y="468">[弱] 团队个别人有探索热情</text>
+  </g>
+  <g>
+    <path class="resist" d="M1070 210 H680"/><text class="txt" x="760" y="198">既有流程惯性：学习新工具成本</text>
+    <path class="resist" d="M980 300 H680" stroke-width="4"/><text class="txt" x="760" y="288">关键人担心权责变化</text>
+    <path class="resist" d="M980 390 H680" stroke-width="4"/><text class="txt" x="760" y="378">试运行期短期工作量增加</text>
+    <path class="resist" d="M880 480 H680" stroke-width="3"/><text class="txt" x="760" y="468">技术方案不确定</text>
+  </g>
+  <rect class="card" x="270" y="585" width="740" height="70" rx="18"/>
+  <text class="txt" x="310" y="626">策略：先削减最大阻力，例如安排新旧流程并行期，降低切换的心理门槛。</text>
+</svg>
